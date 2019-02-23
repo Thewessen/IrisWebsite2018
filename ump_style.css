@@ -3,14 +3,6 @@
 /* } */
 
 body {
-    /* background-attachment: fixed; */
-    /* background-color: black; */
-    /* background-position: right; */
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
-    /* -webkit-background-size: cover; */
-    /* -moz-background-size: cover; */
-    /* -ms-background-size: cover; */
     background-color: black;
     color: #FFFFDF;
     font-family: Amiri-Regular, Gardamond, sans-serif;
@@ -21,23 +13,35 @@ body {
     user-select: none;
     -webkit-user-select: none;
 }
+p {
+    font-family: Amiri-Regular, Gardamond, sans-serif;
+    width: 50%;
+    line-height: 1.5em;
+}
 .bg_img {
-    display: none;
     background-attachment: fixed;
-    background-color: black;
-    background-image: url('./img/Stellar_sound_show_medium.jpg');
-    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
-    -webkit-background-size: cover;
+    bottom: 0;
+    display: none;
+    height: 100%;
     -moz-background-size: cover;
     -ms-background-size: cover;
-    bottom: 0;
-    height: 100%;
     position: fixed;
     right: 0;
+    -webkit-background-size: cover;
     width: 100%;
     z-index: -1;
+}
+.bg_index {
+    background-image: url('./img/index_large.jpg');
+    background-position: center;
+    background-color: gray;
+}
+.bg_brug {
+    background-image: url('./img/brug_large.jpg');
+    background-position: center;
+    background-color: gray;
 }
 .container {
     align-items: flex-start;
@@ -51,9 +55,13 @@ body {
 }
 .article {
     display: flex;
+    flex-flow: column nowrap;
     margin: 0;
     padding: 7% 5%;
     width: 80%;
+}
+.flavor {
+    font-style: italic;
 }
 .navigation {
     display: none;
@@ -63,19 +71,22 @@ body {
     padding: 7% 3%;
     word-spacing: 5px;
 }
+.navigation a {
+    text-decoration: none !important;
+}
 .menu_icon {
     cursor: pointer;
     display: block;
+    height: 32px;
     position: absolute;
     right: 5%;
     top: 3%;
-    height: 32px;
     width: 32px;
 }
 a {
     color: #FFFFDF;
     font-family: Amiri-Regular;
-    text-decoration: none;
+    text-decoration: underline;
 }
 a:visited {
     color: #FFFFDF;
@@ -83,24 +94,20 @@ a:visited {
 }
 .blur {
     background: transparent;
-    background: rgba(4,0,74,0.5);
+    background: rgba(18,18,12,0.5);
 }
-.blur_underline {
-    background: transparent;
-    background: rgba(137,36,3,0.1);
-    border-bottom: 1px solid #FFFFDF;
-    margin: 0;
-    padding: .1em 0;
+.blur_brug {
+    background: rgba(48,48,32,0.5);
 }
 ul {
+    margin: 2em 0;
     list-style-type: none;
     white-space: nowrap;
-    margin: 0;
 }
 li {
-    text-align: left;
     cursor: pointer;
     margin: 0.1em 0.3em;
+    text-align: left;
 }
 h1 {
     font-family: Amiri-Regular;
@@ -108,7 +115,7 @@ h1 {
     font-stretch: extra-expanded;
     font-weight: 400;
     letter-spacing: 5px;
-    margin: 0 0.3em;
+    margin: 2em 0.3em;
     text-decoration: none;
 }
 @media only screen and (min-width: 768px) {
@@ -116,8 +123,11 @@ h1 {
     body {
         font-size: 16px;
     }
-    .bg_img {
-        background-image: url('./img/Stellar_sound_show_large.jpg');
+    .bg_index {
+        background-image: url('./img/index_large.jpg');
+    }
+    .bg_brug {
+        background-image: url('./img/brug_large.jpg');
     }
     .menu_icon {
         display: none;
