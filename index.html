@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="description"
+              content="Projecten van Iris van der Ende, cosmosmuzikant">
+        <meta name="author" content="Samuel Thewessen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Website Iris van der Ende</title>
+		<link rel="stylesheet" type="text/css" href="ump_style.css">
+	</head>
+	<body>
+        <div id='main_container' class='container'>
+            <img class='menu_icon' src='./burger2.png' onclick="(function(){
+                    let art = document.getElementById('article');
+                    let nav = document.getElementById('nav');
+                    getComputedStyle(art,null).display === 'none' ?
+                                       art.style.display = 'flex' :
+                                       art.style.display = 'none';
+                    getComputedStyle(nav,null).display === 'none' ?
+                                       nav.style.display = 'flex' :
+                                       nav.style.display = 'none';
+            })()"/>
+            <div id='article' class='article'>
+                <h1>Iris van der Ende</h1>
+            </div>
+            <div id='nav' class='navigation'>
+            <ul>
+                <a href='http://irisvanderende.nl/'><li
+                                         onmouseenter="this.children[0].className='blur_underline'"
+                                         onmouseleave="this.children[0].className='blur'">
+                    <span class='blur'>Iris van der Ende</span>
+                </li></a>
+                <a href='http://irisvanderende.nl/bio%20contact.html'><li
+                                         onmouseenter="this.children[0].className='blur_underline'"
+                                         onmouseleave="this.children[0].className='blur'">
+                    <span class='blur'>biografie + contact</span>
+                </li></a>
+                <a href='http://irisvanderende.nl/agenda.html'><li
+                                         onmouseenter="this.children[0].className='blur_underline'"
+                                         onmouseleave="this.children[0].className='blur'">
+                    <span class='blur'>agenda</span>
+                </li></a>
+                <a href='http://irisvanderende.nl/begrafenisdienst.html'><li
+                                         onmouseenter="this.children[0].className='blur_underline'"
+                                         onmouseleave="this.children[0].className='blur'">
+                    <span class='blur'>harpiste voor begrafenisdienst</span>
+                </li></a>
+                <a href='http://irisvanderende.nl/waai.html'><li
+                                         onmouseenter="this.children[0].className='blur_underline'"
+                                         onmouseleave="this.children[0].className='blur'">
+                    <span class='blur'>theater | Waai</span>
+                </li></a>
+                <a href='http://irisvanderende.nl/stellarsounshow.html'><li
+                                         onmouseenter="this.children[0].className='blur_underline'"
+                                         onmouseleave="this.children[0].className='blur'">
+                    <span class='blur'>theater | Stellar Sound Show</span>
+                </li></a>
+                <a href='http://irisvanderende.nl/verte.html'><li
+                                         onmouseenter="this.children[0].className='blur_underline'"
+                                         onmouseleave="this.children[0].className='blur'">
+                    <span class='blur'>theater | Verte</span>
+                </li></a>
+                <a href='http://irisvanderende.nl/castorpollux2.html'><li
+                                         onmouseenter="this.children[0].className='blur_underline'"
+                                         onmouseleave="this.children[0].className='blur'">
+                    <span class='blur'>theater | Castor &amp; Pollux</span>
+                </li></a>
+                <a href='http://irisvanderende.nl/De%20stem%20van%20de%20molen.html'><li
+                                         onmouseenter="this.children[0].className='blur_underline'"
+                                         onmouseleave="this.children[0].className='blur'">
+                    <span class='blur'>De stem van de molen</span>
+                </li></a>
+            </ul>
+            </div>
+        </div>
+        <script type="javascript">
+            window.onload = function() {
+                document.body.style.backgroundImage="
+url('./3000x2000/Stellar Sound Show, Iris van der Ende, Oerol 2011, fotograaf Pieter Crucq.jpg')";
+            };
+        </script>
+	</body>
+</html>

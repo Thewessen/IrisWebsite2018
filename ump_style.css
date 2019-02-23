@@ -1,0 +1,109 @@
+/* * { */
+/*     box-sizing: border-box; */
+/* } */
+
+body {
+    background-attachment: fixed;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFDF;
+    font-family: Amiri-Regular, Gardamond, sans-serif;
+    font-size: 12px;
+    margin: 0;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.container {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100%;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.article {
+    display: flex;
+    margin: 0;
+    padding: 7% 5%;
+    width: 80%;
+}
+.navigation {
+    display: none;
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: 0;
+    padding: 7% 3%;
+    word-spacing: 5px;
+}
+.menu_icon {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 3%;
+    height: 32px;
+    width: 32px;
+}
+a {
+    color: #FFFFDF;
+    font-family: Amiri-Regular;
+    text-decoration: none;
+}
+a:visited {
+    color: #FFFFDF;
+    text-decoration: none;
+}
+.blur {
+    background: transparent;
+    background: rgba(4,0,74,0.5);
+}
+.blur_underline {
+    background: transparent;
+    background: rgba(137,36,3,0.1);
+    border-bottom: 1px solid #FFFFDF;
+    margin: 0;
+    padding: .1em 0;
+}
+ul {
+    list-style-type: none;
+    white-space: nowrap;
+    margin: 0;
+}
+li {
+    text-align: left;
+    cursor: pointer;
+    margin: 0.1em 0.3em;
+}
+h1 {
+    font-family: Amiri-Regular;
+    font-size: 1.8em;
+    font-stretch: extra-expanded;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin: 0 0.3em;
+    text-decoration: none;
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop/tablet: */
+    body {
+        font-size: 16px;
+    }
+
+    .menu_icon {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .article {
+        display: flex;
+    }
+}
