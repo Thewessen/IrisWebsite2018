@@ -3,22 +3,41 @@
 /* } */
 
 body {
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
+    /* background-color: black; */
+    /* background-position: right; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* -webkit-background-size: cover; */
+    /* -moz-background-size: cover; */
+    /* -ms-background-size: cover; */
     background-color: black;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -ms-background-size: cover;
-    -moz-background-size: cover;
     color: #FFFFDF;
     font-family: Amiri-Regular, Gardamond, sans-serif;
-    font-size: 12px;
+    font-size: 11px;
     margin: 0;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
     -webkit-user-select: none;
+}
+.bg_img {
+    display: none;
+    background-attachment: fixed;
+    background-color: black;
+    background-image: url('./img/Stellar_sound_show_medium.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    bottom: 0;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    z-index: -1;
 }
 .container {
     align-items: flex-start;
@@ -97,15 +116,15 @@ h1 {
     body {
         font-size: 16px;
     }
-
+    .bg_img {
+        background-image: url('./img/Stellar_sound_show_large.jpg');
+    }
     .menu_icon {
         display: none;
     }
-
     .navigation {
         display: flex;
     }
-
     .article {
         display: flex;
     }
