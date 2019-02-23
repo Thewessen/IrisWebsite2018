@@ -14,62 +14,68 @@ body {
     -webkit-user-select: none;
 }
 p {
-    font-family: Amiri-Regular, Gardamond, sans-serif;
+    font-family: Amiri-Regular;
+    letter-spacing: 1px;
+    line-height: 1.7em;
     width: 50%;
-    line-height: 1.5em;
 }
 .bg_img {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    bottom: 0;
-    display: none;
-    height: 100%;
     -moz-background-size: cover;
     -ms-background-size: cover;
+    -webkit-background-size: cover;
+    bottom: 0;
+    height: 100%;
     position: fixed;
     right: 0;
-    -webkit-background-size: cover;
     width: 100%;
     z-index: -1;
 }
+.youtube_container {
+    background-color: gray;
+    padding-top: 33.75%;
+    position: relative;
+    width: 60%;
+}
 .bg_index {
+    background-color: gray;
     background-image: url('./img/index_large.jpg');
     background-position: center;
-    background-color: gray;
 }
 .bg_brug {
+    background-color: gray;
     background-image: url('./img/brug_large.jpg');
     background-position: center;
-    background-color: gray;
 }
-.container {
-    align-items: flex-start;
-    display: flex;
-    flex-flow: row nowrap;
-    height: 100%;
-    justify-content: flex-start;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+.bg_agenda {
+    background-color: #112332;
 }
 .article {
-    display: flex;
+    display: block;
     flex-flow: column nowrap;
+    height: 93%;
     margin: 0;
-    padding: 7% 5%;
-    width: 80%;
+    padding: 7% 20% 0 5%;
+    visibility: visible;
+    width: 75%;
 }
 .flavor {
     font-style: italic;
 }
 .navigation {
-    display: none;
+    display: block;
     font-size: 1.1em;
     line-height: 1.5;
     margin: 0;
     padding: 7% 3%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
     word-spacing: 5px;
+    z-index: 2;
 }
 .navigation a {
     text-decoration: none !important;
@@ -82,6 +88,7 @@ p {
     right: 5%;
     top: 3%;
     width: 32px;
+    z-index: 3;
 }
 a {
     color: #FFFFDF;
@@ -97,14 +104,20 @@ a:visited {
     background: rgba(18,18,12,0.5);
 }
 .blur_brug {
+    background: transparent;
     background: rgba(48,48,32,0.5);
 }
+.blur_agenda {
+    background: transparent;
+    background: rgba(17,35,50,0.5);
+}
 ul {
-    margin: 2em 0;
     list-style-type: none;
+    margin: 2em 0;
+    padding: 0;
     white-space: nowrap;
 }
-li {
+.nav {
     cursor: pointer;
     margin: 0.1em 0.3em;
     text-align: left;
@@ -113,10 +126,18 @@ h1 {
     font-family: Amiri-Regular;
     font-size: 1.8em;
     font-stretch: extra-expanded;
-    font-weight: 400;
+    font-weight: 1;
     letter-spacing: 5px;
     margin: 2em 0.3em;
     text-decoration: none;
+}
+h2 {
+  font-family: Amiri-Regular;
+  font-size: 1.7em;
+  font-weight: bold;
+  margin: 1em 0 0 0;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 @media only screen and (min-width: 768px) {
     /* For desktop/tablet: */
@@ -133,9 +154,15 @@ h1 {
         display: none;
     }
     .navigation {
-        display: flex;
+        visibility: visible;
     }
     .article {
-        display: flex;
+        visibility: visible;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    /* Very large screens */
+    body {
+        font-size: 18px;
     }
 }
