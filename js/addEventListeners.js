@@ -4,14 +4,13 @@
     let nav = document.getElementById('nav');
 
     if ( icon && art && nav ) {
-    console.log('has als');
         icon.addEventListener('click',function() {
-            getComputedStyle(art,null).visibility === 'hidden' ?
-                art.style.visibility = 'visible' :
-                art.style.visibility = 'hidden';
-            getComputedStyle(nav,null).visibility === 'hidden' ?
-                nav.style.visibility = 'visible' :
-                nav.style.visibility = 'hidden';
-           });
+            getComputedStyle(art,null).display === 'block' ?
+                art.style.display = 'none' :
+                art.style.display = 'block';
+            getComputedStyle(nav,null).display === 'block' ?
+                nav.style.display = 'none' :
+                nav.style.display = 'block';
+        })
     }
 })()
