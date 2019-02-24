@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Biografie en contact</title>
 		<link rel="stylesheet" type="text/css" href="ump_style.css">
+		<link rel="stylesheet" type="text/css" href="bio_colors.css">
 	</head>
 	<body>
     <img class='menu_icon' src='./menu.png' onclick="(function(){
@@ -21,21 +22,22 @@
                         nav.style.visibility = 'visible' :
                         nav.style.visibility = 'hidden';
     })()"/>
+    <div id='flex_container' class='container'>
     <div id='article' class='article'>
       <h1>Biografie</h1>
-        <p class='blur_brug'>
+        <p class='blur'>
           Ik ben Iris van der Ende, theaterspeler/actrice en maker en
           harpist. Theater studeerde ik bij Toneelacademie van Maastricht
           waar ik in 2012 afstudeerde als performer.
         </p>
-        <p class='blur_brug'>
+        <p class='blur'>
           Harp studeerde ik bij conservatorium Arnhem bij Manja Smits. Voor
           mijn zoektocht naar een snijvlak voor theater en
           muziek en studeerde ik bij de Master Muziektheater T.I.M.E. van
           Koninklijk Conservatorium en de Veenfabriek.
         </p> 
       <h1>Kosmosmuzikant</h1>
-        <p class='blur_brug'>
+        <p class='blur'>
           In mijn werk staat op dit moment de kosmos centraal: ik speel met de
           natuurkrachten en geluiden. Mijn klankgedicht Waai verbeeldt de wind
           en verschillende windkrachten in het polderlandschap. Mijn
@@ -46,100 +48,36 @@
           maakt van het heelal een concertzaal. Het laat de geluiden van
           sterren horen en zien in een dialoog midden onder het hemelgewelf.
         </p>
-        <p class='blur_brug'>
+        <p class='blur'>
           Kosmosmuzikant, dat is een nieuw beroep. Het is een kunstenaar die in
           dialoog gaat met de krachten van de natuur.
         </p> 
-        <p class='blur_brug'>
+        <p class='blur'>
           Ik werk samen met dramaturg Marijn van der Jagt en Tess Scholten,
           performer schrijver Bart van de Woestijne, laserontwerper Hans
           Lasschuit, mimegezelschap Walking Faces. Ik heb samengewerkt met de
           festivals Parade, Oerol, Tweetakt, Cultura Nova, Theater Kikker.
         </p> 
         <h1>Contact</h1>
-        <p class='blur_brug'>
-          voor vragen, informatie of kennismaking neem contact op via:
-          <ul>
-            <li>irisv.d.ende@gmail.com</li>
-            <li>+31 6 42 28 83 75</li>
-          </ul>
-        </p> 
+        <p class='blur'>
+          Voor vragen, informatie of kennismaking neem contact op via:
+        </p>
+        <ul>
+          <li>
+            <a href="mailto:irisv.d.ende@gmail.com">
+              irisv.d.ende@gmail.com
+            </a>
+          </li>
+          <li>+31 6 42 28 83 75</li>
+        </ul>
+    </div>
+    <div class='nav_margin'></div>
     </div>
     <div id='nav' class='navigation'>
-      <ul>
-        <a href='./index.html'>
-          <li class='nav'
-               onmouseenter="this.children[0].style.borderBottom='1px solid #FFFFDF'"
-               onmouseleave="this.children[0].style.borderBottom='none'">
-          <span class='blur'>Iris van der Ende</span>
-          </li>
-        </a>
-        <!-- <a href='./bio_contact.html'> -->
-        <!--   <li class='nav'
-                    onmouseenter="this.children[0].style.borderBottom='1px solid #FFFFDF'" -->
-        <!--        onmouseleave="this.children[0].style.borderBottom='none'"> -->
-        <!--   <span class='blur'>biografie + contact</span> -->
-        <!--   </li> -->
-        <!-- </a> -->
-        <a href='./agenda.html'>
-          <li class='nav'
-               onmouseenter="this.children[0].style.borderBottom='1px solid #FFFFDF'"
-               onmouseleave="this.children[0].style.borderBottom='none'">
-          <span class='blur'>agenda</span>
-          </li>
-        </a>
-        <a href='./begrafenisdienst.html'>
-          <li class='nav'
-              onmouseenter="this.children[0].style.borderBottom='1px solid #FFFFDF'"
-               onmouseleave="this.children[0].style.borderBottom='none'">
-          <span class='blur'>harpiste voor begrafenisdienst</span>
-          </li>
-        </a>
-        <a href='./waai.html'>
-          <li class='nav'
-              onmouseenter="this.children[0].style.borderBottom='1px solid #FFFFDF'"
-               onmouseleave="this.children[0].style.borderBottom='none'">
-          <span class='blur'>theater | Waai</span>
-          </li>
-        </a>
-        <a href='./stellarsounshow.html'>
-          <li class='nav'
-              onmouseenter="this.children[0].style.borderBottom='1px solid #FFFFDF'"
-               onmouseleave="this.children[0].style.borderBottom='none'">
-          <span class='blur'>theater | Stellar Sound Show</span>
-          </li>
-        </a>
-        <a href='./verte.html'>
-          <li class='nav'
-              onmouseenter="this.children[0].style.borderBottom='1px solid #FFFFDF'"
-               onmouseleave="this.children[0].style.borderBottom='none'">
-          <span class='blur'>theater | Verte</span>
-          </li>
-        </a>
-        <a href='./castorpollux.html'>
-          <li class='nav'
-              onmouseenter="this.children[0].style.borderBottom='1px solid #FFFFDF'"
-               onmouseleave="this.children[0].style.borderBottom='none'">
-          <span class='blur'>theater | Castor &amp; Pollux</span>
-          </li>
-        </a>
-        <a href='./stem_van_de_molen.html'>
-          <li class='nav'
-              onmouseenter="this.children[0].style.borderBottom='1px solid #FFFFDF'"
-               onmouseleave="this.children[0].style.borderBottom='none'">
-          <span class='blur'>De stem van de molen</span>
-          </li>
-        </a>
-        <a href='./onder_de_brug.html'>
-          <li class='nav'
-              onmouseenter="this.children[0].style.borderBottom='1px solid #FFFFDF'"
-                                       onmouseleave="this.children[0].style.borderBottom='none'">
-              <span class='blur'>Onder de brug</span>
-          </li>
-        </a>
-      </ul>
+          <!-- Javascript gets inserted here (req. #id='nav'). -->
     </div>
     <div id='background_img' class='bg_img bg_brug'></div>
+    <script src='navigation.js'></script>
     <script>
       window.onload = function() {
         document.getElementById('background_img').style.display="block";

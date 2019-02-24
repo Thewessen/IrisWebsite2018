@@ -1,23 +1,73 @@
 /* * { */
 /*     box-sizing: border-box; */
 /* } */
-
+html {
+    font-size: 62.5%;
+}
 body {
     background-color: black;
     color: #FFFFDF;
     font-family: Amiri-Regular, Gardamond, sans-serif;
-    font-size: 11px;
+    font-size: 10px;
+    font-size: 1rem;
     margin: 0;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
     -webkit-user-select: none;
 }
+ul {
+    list-style-type: none;
+    margin: .2em 0;
+    padding: 0;
+    white-space: nowrap;
+}
+li {
+    margin: .2em 0;
+    padding: .2em 3em;
+    text-align: left;
+}
+span {
+    padding: .1em .3em;
+}
+h1 {
+    font-family: Amiri-Regular;
+    font-size: 20px;
+    font-size: 2rem;
+    font-stretch: extra-expanded;
+    font-weight: normal;
+    letter-spacing: 5px;
+    margin: 2em 0.3em;
+    text-decoration: none;
+}
+h2 {
+    font-family: Amiri-Regular;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 1em 0 0 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
 p {
     font-family: Amiri-Regular;
     letter-spacing: 1px;
     line-height: 1.7em;
-    width: 50%;
+}
+a {
+    color: #FFFFDF;
+    font-family: Amiri-Regular;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+a:visited {
+    color: #FFFFDF;
+    text-decoration: none;
+}
+.blur {
+    background: transparent;
+    border-radius: 5px;
+    padding: .1em .3em;
 }
 .bg_img {
     background-attachment: fixed;
@@ -33,40 +83,36 @@ p {
     width: 100%;
     z-index: -1;
 }
+.inline {
+    border-radius: 5px;
+    width: 100%;
+}
 .youtube_container {
     background-color: gray;
-    padding-top: 33.75%;
+    border-radius: 5px;
+    padding-top: 56.25%;
     position: relative;
-    width: 60%;
-}
-.bg_index {
-    background-color: gray;
-    background-image: url('./img/index_large.jpg');
-    background-position: center;
-}
-.bg_brug {
-    background-color: gray;
-    background-image: url('./img/brug_large.jpg');
-    background-position: center;
-}
-.bg_agenda {
-    background-color: #112332;
-}
-.article {
-    display: block;
-    flex-flow: column nowrap;
-    height: 93%;
-    margin: 0;
-    padding: 7% 20% 0 5%;
-    visibility: visible;
-    width: 75%;
 }
 .flavor {
     font-style: italic;
 }
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.nav_margin {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0;
+}
+.article {
+    display: block;
+    margin: 0;
+    padding: 7% 5%;
+    visibility: visible;
+}
 .navigation {
     display: block;
-    font-size: 1.1em;
     line-height: 1.5;
     margin: 0;
     padding: 7% 3%;
@@ -80,75 +126,43 @@ p {
 .navigation a {
     text-decoration: none !important;
 }
+.navigation li {
+    cursor: pointer;
+}
+.navigation ul {
+    margin: 2em .3em;
+}
 .menu_icon {
     cursor: pointer;
     display: block;
     height: 32px;
+    margin: 0;
+    padding: 7% 3%;
     position: absolute;
     right: 5%;
     top: 3%;
     width: 32px;
     z-index: 3;
 }
-a {
-    color: #FFFFDF;
-    font-family: Amiri-Regular;
-    text-decoration: underline;
-}
-a:visited {
-    color: #FFFFDF;
-    text-decoration: none;
-}
-.blur {
-    background: transparent;
-    background: rgba(18,18,12,0.5);
-}
-.blur_brug {
-    background: transparent;
-    background: rgba(48,48,32,0.5);
-}
-.blur_agenda {
-    background: transparent;
-    background: rgba(17,35,50,0.5);
-}
-ul {
-    list-style-type: none;
-    margin: 2em 0;
-    padding: 0;
-    white-space: nowrap;
-}
-.nav {
-    cursor: pointer;
-    margin: 0.1em 0.3em;
-    text-align: left;
-}
-h1 {
-    font-family: Amiri-Regular;
-    font-size: 1.8em;
-    font-stretch: extra-expanded;
-    font-weight: 1;
-    letter-spacing: 5px;
-    margin: 2em 0.3em;
-    text-decoration: none;
-}
-h2 {
-  font-family: Amiri-Regular;
-  font-size: 1.7em;
-  font-weight: bold;
-  margin: 1em 0 0 0;
-  text-decoration: none;
-  text-transform: uppercase;
-}
 @media only screen and (min-width: 768px) {
     /* For desktop/tablet: */
+    html {
+        font-size: 100%;
+    }
     body {
         font-size: 16px;
+        font-size: 1rem;
     }
-    .bg_index {
-        background-image: url('./img/index_large.jpg');
+    h1 {
+        font-size: 32px;
+        font-size: 2rem;
     }
-    .bg_brug {
-        background-image: url('./img/brug_large.jpg');
+    h2 {
+        font-size: 25.6px;
+        font-size: 1.6rem;
+    }
+    .nav_margin {
+        flex-basis: 430px;
     }
     .menu_icon {
         display: none;
@@ -162,7 +176,22 @@ h2 {
 }
 @media only screen and (min-width: 1920px) {
     /* Very large screens */
+    html {
+        font-size: 112,5%;
+    }
     body {
         font-size: 18px;
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 36px;
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 28.8px;
+        font-size: 1.6rem;
+    }
+    .nav_margin {
+        flex-basis: 500px;
     }
 }

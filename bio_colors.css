@@ -1,0 +1,19 @@
+/* Average colors in bg_img [mean](med):
+ * red: [101] (77)
+ * green: [86] (64)
+ * blue: [61.3] (47)
+*/
+.blur {
+    background-color: rgba(77,64,47,0.5);
+}
+.bg_img {
+    background-color: rgb(106,91,64);
+    background-image: url('./img/brug_medium.jpg');
+    background-position: center;
+}
+
+@media only screen and (min-width: 768px) {
+.bg_img {
+    background-image: url('./img/brug_large.jpg');
+}
+}
