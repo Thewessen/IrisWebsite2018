@@ -12,15 +12,27 @@
 		<link rel="stylesheet" type="text/css" href="./css/brug_colors.css">
 	</head>
 	<body>
-      <svg id="menu_icon" class="menu_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" >
-          <rect id="svgEditorBackground" x="0" y="0" width="100%" height="100%" style="fill: none; stroke: none;"/>
-          <line id="line1" x1="6.25%" y1="25%" x2="93.25%" y2="25%" style="stroke:inherit;fill:none;stroke-width:10%;stroke-linecap:round;vector-effect:non-scaling-stroke;"/>
-          <line id="line2" x1="6.25%" y1="50%" x2="93.25%" y2="50%" style="stroke:inherit;fill:none;stroke-width:10%;stroke-linecap:round;vector-effect:non-scaling-stroke;"/>
-          <line id="line3" x1="6.25%" y1="75%" x2="93.25%" y2="75%" style="stroke:inherit;fill:none;stroke-width:10%;stroke-linecap:round;vector-effect:non-scaling-stroke;"/>
-      </svg>
     <div id='flex_container' class='container'>
+      <div id='icon_container' class='icon_container'> 
+          <svg id="menu_icon" class="menu_icon" 
+              xmlns="http://www.w3.org/2000/svg" 
+              xmlns:xlink="http://www.w3.org/1999/xlink" 
+              preserveAspectRatio="xMidYMid meet" >
+              <rect id="svgEditorBackground" x="0" y="0" 
+                    width="100%" height="100%" style="fill: none; stroke: none;"/>
+              <line id="line1" x1="6.25%" y1="25%" x2="93.25%" y2="25%" 
+                    style="stroke:inherit;fill:none;stroke-width:10%;
+                           stroke-linecap:round;vector-effect:non-scaling-stroke;"/>
+              <line id="line2" x1="6.25%" y1="50%" x2="93.25%" y2="50%" 
+                    style="stroke:inherit;fill:none;stroke-width:10%;
+                           stroke-linecap:round;vector-effect:non-scaling-stroke;"/>
+              <line id="line3" x1="6.25%" y1="75%" x2="93.25%" y2="75%" 
+                    style="stroke:inherit;fill:none;stroke-width:10%;
+                           stroke-linecap:round;vector-effect:non-scaling-stroke;"/>
+          </svg>
+      </div>
       <div id='article' class='article'>
-        <h1>Onder de brug</h1>
+        <h1 class='no_top_margin'>Onder de brug</h1>
           <p class='blur flavor'>
             Op verscholen plekken klinkt de stad heel anders. In de
             open lucht vervliegen de geluiden en de woorden. Onder de
@@ -41,20 +53,20 @@
             muziek die weerkaatst tussen het wateroppervlak van het IJ en
             het gestolde asfalt van de brug boven hun hoofden?
           </p>
-          <div class="youtube_container">
-            <iframe style="width: 100%; height: 100%; position:
-            absolute; top: 0; left: 0;" src="https://www.youtube.com/embed/KR_4NYh2tY8"
-            frameborder="0" allow="accelerometer; autoplay;
-            encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-          </div>
+          <!-- <div class="youtube_container"> -->
+          <!--   <iframe style="width: 100%; height: 100%; position: absolute; top: 0; left: 0;" --> 
+          <!--           src="https://www.youtube.com/embed/KR_4NYh2tY8" -->
+          <!--   frameborder="0" allow="accelerometer; autoplay; -->
+          <!--   encrypted-media; gyroscope; picture-in-picture" -->
+          <!--   allowfullscreen></iframe> -->
+          <!-- </div> -->
           <p class='blur'>
             Meer weten? Lees
             <a href="https://overhetij.nl/nieuws/muzikale-ode-aan-de-galm">hier</a>
             het artikel van Over het IJ festival.
           </p>
         <h1>Onder de brug: Torontobrug</h1>
-          <img class="inline" src="./img/brug_trouw_large.jpg" style="display: inline-block" />
+          <img class="img_full" src="./img/brug_trouw_large.jpg" />
       </div>
       <div id='nav' class='navigation'>
             <!-- Javascript gets inserted here (req. #id='nav'). -->

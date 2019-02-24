@@ -64,10 +64,49 @@ a:visited {
     color: #FFFFDF;
     text-decoration: none;
 }
+.article {
+    display: block;
+    flex-basis: 80%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 0;
+    padding: 7% 5%;
+}
+.navigation {
+    display: none;
+    flex-basis: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 1.4rem;
+    line-height: 2;
+    margin-top: 0;
+    padding: 8% 4%;
+    word-spacing: 7px;
+    z-index: 2;
+}
+.navigation a {
+    text-decoration: none !important;
+}
+.navigation li {
+    cursor: pointer;
+    padding: 0;
+}
+.navigation ul {
+    margin-top: 1em;
+}
+.icon_container {
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-align: right;
+}
 .blur {
     background: transparent;
     border-radius: 5px;
     padding: .1em .3em;
+}
+.flavor {
+    font-style: italic;
 }
 .bg_img {
     background-attachment: fixed;
@@ -83,65 +122,34 @@ a:visited {
     width: 100%;
     z-index: -1;
 }
-.inline {
-    border-radius: 5px;
-    width: 100%;
-}
 .youtube_container {
-    background-color: gray;
+    background-color: transparent;
     border-radius: 5px;
     padding-top: 56.25%;
     position: relative;
 }
-.flavor {
-    font-style: italic;
-}
 .container {
-    display: flex;
-    flex-flow: row nowrap;
     align-items: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
     justify-content: flex-start;
+    width: 100%;
 }
-.nav_margin {
+.img_full {
+    border-radius: 5px;
+    width: 100%;
 }
-.article {
-    display: block;
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 80%;
-    margin: 0;
-    padding: 7% 5%;
-}
-.navigation {
-    display: none;
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: 0;
-    font-size: 1.6rem;
-    line-height: 1.5;
-    padding: 8% 4%;
-    margin-top: 0;
-    word-spacing: 7px;
-    z-index: 2;
-}
-.navigation a {
-    text-decoration: none !important;
-}
-.navigation li {
-    padding: 0;
-    cursor: pointer;
+.no_top_margin {
+    margin-top: 0 !important;
 }
 .menu_icon {
     cursor: pointer;
-    display: block;
     height: 32px;
     height: 3.2rem;
-    margin: 2em;
+    margin: 1em;
     padding: 0;
-    position: absolute;
-    right: 5%;
     stroke: #FFFFDF;
-    top: 3%;
     width: 32px;
     width: 3.2rem;
     z-index: 3;
@@ -163,15 +171,16 @@ a:visited {
         font-size: 25.6px;
         font-size: 1.6rem;
     }
-    .nav_margin {
-        flex-basis: 430px;
+    .container {
+        flex-wrap: nowrap;
     }
-    .menu_icon {
+    .icon_container {
         display: none;
     }
     .navigation {
         display: block;
         font-size: 1.3rem;
+        line-height: 1.5;
     }
 }
 @media only screen and (min-width: 1920px) {
@@ -190,8 +199,5 @@ a:visited {
     h2 {
         font-size: 28.8px;
         font-size: 1.6rem;
-    }
-    .nav_margin {
-        flex-basis: 500px;
     }
 }
