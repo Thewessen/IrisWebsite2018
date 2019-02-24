@@ -37,7 +37,7 @@ h1 {
     font-stretch: extra-expanded;
     font-weight: normal;
     letter-spacing: 5px;
-    margin: 2em 0.3em;
+    margin: 1em 0.3em;
     text-decoration: none;
 }
 h2 {
@@ -99,52 +99,51 @@ a:visited {
 .container {
     display: flex;
     flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 .nav_margin {
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: 0;
 }
 .article {
     display: block;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 80%;
     margin: 0;
     padding: 7% 5%;
-    visibility: visible;
 }
 .navigation {
-    display: block;
+    display: none;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0;
+    font-size: 1.6rem;
     line-height: 1.5;
-    margin: 0;
-    padding: 7% 3%;
-    position: fixed;
-    right: 0;
-    top: 0;
-    visibility: hidden;
-    word-spacing: 5px;
+    padding: 8% 4%;
+    margin-top: 0;
+    word-spacing: 7px;
     z-index: 2;
 }
 .navigation a {
     text-decoration: none !important;
 }
 .navigation li {
+    padding: 0;
     cursor: pointer;
-}
-.navigation ul {
-    margin: 2em .3em;
 }
 .menu_icon {
     cursor: pointer;
     display: block;
-    height: 30px;
-    height: 3rem;
-    margin: 0;
-    padding: 7% 3%;
+    height: 32px;
+    height: 3.2rem;
+    margin: 2em;
+    padding: 0;
     position: absolute;
     right: 5%;
     stroke: #FFFFDF;
     top: 3%;
-    width: 30px;
-    width: 3rem;
+    width: 32px;
+    width: 3.2rem;
     z-index: 3;
 }
 @media only screen and (min-width: 768px) {
@@ -171,10 +170,8 @@ a:visited {
         display: none;
     }
     .navigation {
-        visibility: visible;
-    }
-    .article {
-        visibility: visible;
+        display: block;
+        font-size: 1.3rem;
     }
 }
 @media only screen and (min-width: 1920px) {
