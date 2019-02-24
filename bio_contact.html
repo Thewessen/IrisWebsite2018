@@ -8,20 +8,16 @@
     <meta name="author" content="Samuel Thewessen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Biografie en contact</title>
-		<link rel="stylesheet" type="text/css" href="ump_style.css">
-		<link rel="stylesheet" type="text/css" href="bio_colors.css">
+		<link rel="stylesheet" type="text/css" href="./css/ump_style.css">
+		<link rel="stylesheet" type="text/css" href="./css/bio_colors.css">
 	</head>
 	<body>
-    <img class='menu_icon' src='./menu.png' onclick="(function(){
-      let art = document.getElementById('article');
-      let nav = document.getElementById('nav');
-      getComputedStyle(art,null).visibility === 'hidden' ?
-                        art.style.visibility = 'visible' :
-                        art.style.visibility = 'hidden';
-      getComputedStyle(nav,null).visibility === 'hidden' ?
-                        nav.style.visibility = 'visible' :
-                        nav.style.visibility = 'hidden';
-    })()"/>
+      <svg class="menu_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" >
+          <rect id="svgEditorBackground" x="0" y="0" width="100%" height="100%" style="fill: none; stroke: none;"/>
+          <line id="line1" x1="6.25%" y1="25%" x2="93.25%" y2="25%" style="stroke:inherit;fill:none;stroke-width:10%;stroke-linecap:round;vector-effect:non-scaling-stroke;"/>
+          <line id="line2" x1="6.25%" y1="50%" x2="93.25%" y2="50%" style="stroke:inherit;fill:none;stroke-width:10%;stroke-linecap:round;vector-effect:non-scaling-stroke;"/>
+          <line id="line3" x1="6.25%" y1="75%" x2="93.25%" y2="75%" style="stroke:inherit;fill:none;stroke-width:10%;stroke-linecap:round;vector-effect:non-scaling-stroke;"/>
+      </svg>
     <div id='flex_container' class='container'>
     <div id='article' class='article'>
       <h1>Biografie</h1>
@@ -77,7 +73,7 @@
           <!-- Javascript gets inserted here (req. #id='nav'). -->
     </div>
     <div id='background_img' class='bg_img bg_brug'></div>
-    <script src='navigation.js'></script>
+    <script src='./js/navigation.js'></script>
     <script>
       window.onload = function() {
         document.getElementById('background_img').style.display="block";

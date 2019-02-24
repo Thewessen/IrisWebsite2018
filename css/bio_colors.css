@@ -8,12 +8,12 @@
 }
 .bg_img {
     background-color: rgb(106,91,64);
-    background-image: url('./img/brug_medium.jpg');
+    background-image: url('../img/brug_medium.jpg');
     background-position: center;
 }
 
 @media only screen and (min-width: 768px) {
 .bg_img {
-    background-image: url('./img/brug_large.jpg');
+    background-image: url('../img/brug_large.jpg');
 }
 }

@@ -8,8 +8,8 @@ body {
     background-color: black;
     color: #FFFFDF;
     font-family: Amiri-Regular, Gardamond, sans-serif;
-    font-size: 10px;
-    font-size: 1rem;
+    font-size: 11px;
+    font-size: 1.1rem;
     margin: 0;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -135,13 +135,16 @@ a:visited {
 .menu_icon {
     cursor: pointer;
     display: block;
-    height: 32px;
+    height: 30px;
+    height: 3rem;
     margin: 0;
     padding: 7% 3%;
     position: absolute;
     right: 5%;
+    stroke: #FFFFDF;
     top: 3%;
-    width: 32px;
+    width: 30px;
+    width: 3rem;
     z-index: 3;
 }
 @media only screen and (min-width: 768px) {

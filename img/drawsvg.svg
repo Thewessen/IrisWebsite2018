@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" stroke="#FFFFDF" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100% 100%" preserveAspectRatio="xMidYMid meet" >
+    <rect id="svgEditorBackground" x="0" y="0" width="100%" height="100%" style="fill: none; stroke: none;"/>
+    <line id="line1" x1="6.25%" y1="25%" x2="93.25%" y2="25%" style="stroke:inherit;fill:none;stroke-width:12.5%;stroke-linecap:round;vector-effect:non-scaling-stroke;"/>
+    <line id="line2" x1="6.25%" y1="50%" x2="93.25%" y2="50%" style="stroke:inherit;fill:none;stroke-width:12.5%;stroke-linecap:round;vector-effect:non-scaling-stroke;"/>
+    <line id="line3" x1="6.25%" y1="75%" x2="93.25%" y2="75%" style="stroke:inherit;fill:none;stroke-width:12.5%;stroke-linecap:round;vector-effect:non-scaling-stroke;"/>
+</svg>
