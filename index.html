@@ -11,7 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="./css/index_colors.css">
 	</head>
 	<body>
-      <svg class="menu_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" >
+      <svg id="menu_icon" class="menu_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" >
           <rect id="svgEditorBackground" x="0" y="0" width="100%" height="100%" style="fill: none; stroke: none;"/>
           <line id="line1" x1="6.25%" y1="25%" x2="93.25%" y2="25%" style="stroke:inherit;fill:none;stroke-width:10%;stroke-linecap:round;vector-effect:non-scaling-stroke;"/>
           <line id="line2" x1="6.25%" y1="50%" x2="93.25%" y2="50%" style="stroke:inherit;fill:none;stroke-width:10%;stroke-linecap:round;vector-effect:non-scaling-stroke;"/>
@@ -38,6 +38,7 @@
       </div>
       <div id='background_img' class='bg_img'></div>
       <script src='./js/navigation.js'></script>
+      <script src='./js/addEventListeners.js'></script>
       <script>
           window.onload = function() {
               document.getElementById('background_img').style.display="block";
