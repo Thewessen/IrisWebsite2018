@@ -75,6 +75,7 @@ hr {
     flex-shrink: 1;
     margin: 0;
     padding: 7% 5%;
+    z-index: 2;
 }
 .navigation {
     display: none;
@@ -102,6 +103,7 @@ hr {
     flex-grow: 0;
     flex-shrink: 0;
     text-align: right;
+    z-index: 2;
 }
 .blur {
     background: transparent;
@@ -112,24 +114,26 @@ hr {
     font-style: italic;
 }
 .bg_img {
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-clip: border-box;
     -webkit-background-clip: border-box;
     background-origin: border-box;
     -webkit-background-origin: border-box;
-    background-position: center bottom;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
     -webkit-background-size: cover;
     bottom: 0;
-    display: block;
+    /* right: 0; */
+    /* top: 0; */
+    /* left: 0; */
+    display: initial;
     height: 100%;
     position: fixed;
-    right: 0;
     width: 100%;
-    z-index: -1;
+    z-index: 1;
 }
 .youtube_container {
     background-color: transparent;
