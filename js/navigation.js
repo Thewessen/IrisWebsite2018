@@ -28,7 +28,7 @@
             link:   './stem_van_de_molen.html',
             content:'De stem van de molen'
         },{
-            link:   './onder_de_brug2.html',
+            link:   './onder_de_brug.html',
             content:'Onder de brug'
         }
     ];
