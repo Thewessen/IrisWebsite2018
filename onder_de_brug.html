@@ -154,6 +154,8 @@
             window.setTimeout(function() {
               img.style.backgroundImage=bgs[current_sec];
               img.style.backgroundColor=rgbs[current_sec];
+              img.style.backgroundSize='cover';
+              img.style.backgroundPosition='center';
               img.style.opacity = 1;
             },300)
             last_sec = current_sec;
