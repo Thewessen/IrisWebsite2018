@@ -4,24 +4,33 @@
  * blue: [61.3] (47)
 */
 .blur {
-    background-color: rgba(77,64,47,0.5);
+    background-color: rgba(77,74,73,0.5);
     transition: background-color .3s ease .2s;
     -webkit-transition: background-color .3s ease .2s;
     -moz-transition: background-color .3s ease .2s;
     -mz-transition: background-color .3s ease .2s;
 }
 .bg_img {
-    background-color: rgb(77,64,47);
+    background-color: rgb(77,74,73);
     background-image: url('../img/brug_intro_large.jpg');
     background-position: center;
+    background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -webkit-background-size: cover;
     opacity: 1;
+    filter: alpha(opacity=100);
     transition: opacity .3s ease .2s,
+                filter .3s ease .2s,
                 background-color .3s ease .2s;
     -webkit-transition: opacity .3s ease .2s,
+                filter .3s ease .2s,
                 background-color .3s ease .2s;
     -moz-transition: opacity .3s ease .2s,
+                filter .3s ease .2s,
                 background-color .3s ease .2s;
     -mz-transition: opacity .3s ease .2s,
+                filter .3s ease .2s,
                 background-color .3s ease .2s;
 }
 
