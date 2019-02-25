@@ -13,11 +13,6 @@
 .bg_img {
     background-color: rgb(77,74,73);
     background-image: url('../img/brug_intro_large.jpg');
-    background-position: center;
-    background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    -webkit-background-size: cover;
     opacity: 1;
     filter: alpha(opacity=100);
     transition: opacity .3s ease .2s,

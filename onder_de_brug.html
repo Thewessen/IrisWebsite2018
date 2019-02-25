@@ -6,7 +6,7 @@
               content="Drie verschillende lokaties, drie verschillende
               voorstellingen, allemaal onder de brug">
         <meta name="author" content="Samuel Thewessen">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=2.0">
 		<title>Onder de brug</title>
 		<link rel="stylesheet" type="text/css" href="./css/ump_style.css">
 		<link rel="stylesheet" type="text/css" href="./css/brug_colors.css">
@@ -32,69 +32,6 @@
           </svg>
       </div>
       <div id='article' class='article'>
-        <h1 id='intro' style='margin-top: 60%; margin-top: 60vh;'>Onder de brug</h1>
-          <p class='blur flavor'>
-            Op verscholen plekken klinkt de stad heel anders. In de
-            open lucht vervliegen de geluiden en de woorden. Onder de
-            brug is de ruimte een klankkast. Alles blijft er hangen voordat
-            het verdwijnt: geluiden, klanken, gedachten. Alsof de godin
-            Echo er woont, die vervloekt is en alleen nog anderen kan napraten.
-          </p>
-          <p class='blur flavor'>
-            Op een vlot onder een brug zit ik met mijn harp, dat van
-            zichzelf al een resonerend instrument is. Ik laat het
-            publiek luisteren naar het geluid van een plek, en beantwoord
-            die met arpeggio's, akkoorden en melodie&euml;n. Zo bespeel ik
-            mijn harp in de ruimte.
-          </p> 
-          <end />
-          <p class='blur'>
-            Drie verschillende locaties, drie verschillende voorstellingen:
-          </p>
-          <ul>
-            <a href='#onder'><li>Over het IJ Festival</li></a>
-            <a href='#kelder'><li>Brugkelder</li></a>
-            <a href='#toronto'><li>Torontobrug</li></a>
-          </ul>
-        <h1 id='onder' style='margin-top: 60%; margin-top: 60vh;'>Onder de brug: Over het IJ</h1>
-          <p class='blur'>
-            De speellocatie van ONDER DE BRUG is een brug bij
-            jachthaven Marina Amsterdam op de NDSM-werf. Hoe klinkt
-            muziek die weerkaatst tussen het wateroppervlak van het IJ en
-            het gestolde asfalt van de brug boven hun hoofden?
-          </p>
-          <end />
-          <div class="youtube_container">
-            <iframe style="width: 100%; height: 100%; position: absolute; top: 0; left: 0;" 
-                    src="https://www.youtube.com/embed/KR_4NYh2tY8"
-            frameborder="0" allow="accelerometer; autoplay;
-            encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-          </div>
-          <p class='blur'>
-            Meer weten? Lees
-            <a href="https://overhetij.nl/nieuws/muzikale-ode-aan-de-galm">hier</a>
-            het artikel van Over het IJ festival.
-          </p>
-        <h1 id='kelder' style='margin-top: 60%; margin-top: 60vh;'>Brugkelder</h1>
-          <p class='blur'>
-            De speellocatie van ONDER DE BRUG is een brug bij
-            jachthaven Marina Amsterdam op de NDSM-werf. Hoe klinkt
-            muziek die weerkaatst tussen het wateroppervlak van het IJ en
-            het gestolde asfalt van de brug boven hun hoofden?
-          </p>
-        <end />
-        <h1 id='toronto' style='margin-top: 60%; margin-top: 60vh;'>Onder de brug: Torontobrug</h1>
-          <p class='blur'>
-            De speellocatie van ONDER DE BRUG is een brug bij
-            jachthaven Marina Amsterdam op de NDSM-werf. Hoe klinkt
-            muziek die weerkaatst tussen het wateroppervlak van het IJ en
-            het gestolde asfalt van de brug boven hun hoofden?
-          </p>
-        <end />
-          <img class="img_full" src="./img/brug_trouw_large.jpg" />
-        <h1 id='toronto' style='margin-top: 60%; margin-top: 60vh;'>Met dank aan</h1>
-        <end />
       </div>
       <div id='nav' class='navigation'>
             <!-- Javascript gets inserted here (req. #id='nav'). -->
@@ -103,87 +40,11 @@
     <div id='background_img' class='bg_img'></div>
     <script src='./js/navigation.js'></script>
     <script src='./js/addEventListeners.js'></script>
+    <script src='./js/addBackgroundSwap.js'></script>
     <script>
       window.onload = function() {
         document.getElementById('background_img').style.display="block";
       }
-      document.addEventListener('scroll', (function() {
-        let start = document.getElementsByTagName('h1');
-//        let end = document.getElementsByTagName('end');
-        let wh = window.innerHeight;
-
-        let bgs = [
-            "url('./img/brug_intro_large.jpg')",
-            "url('./img/brug_overhetij_large.jpg')",
-            "url('./img/brug_kelder.jpg')",
-            "url('./img/brug_toronto_large.jpg')",
-            "url('./img/brug_credits.jpg')"
-        ];
-
-        let rgbs = [
-            "rgb(77,74,73)",
-            "rgb(77,63,47)",
-            "rgb(104,128,167)",
-            "rgb(101,99,97)",
-            "rgb(143,139,136)"
-        ];
-
-        let rgbas = [
-            "rgba(77,74,73,0.5)",
-            "rgba(77,63,47,0.5)",
-            "rgba(104,128,167,0.5)",
-            "rgba(101,99,97,0.5)",
-            "rgba(143,139,136,0.5)"
-        ];
-
-        let last_sec = 0;
-        let current_sec = 0;
-
-        return function() {
-          for( let i = 0; i < start.length; i += 1 ) {
-            let st = start[i].getBoundingClientRect().top;
-
-            if ( st < wh ) {
-              current_sec = i;
-            }
-          }
-          if ( current_sec !== last_sec ) {
-            // Change background image and color
-            let img = document.getElementById('background_img');
-            img.style.opacity = 0.2;
-            img.style.filter = 'alpha(opacity=20)'
-            window.setTimeout(function() {
-              img.style.backgroundImage=bgs[current_sec];
-              img.style.backgroundColor=rgbs[current_sec];
-              img.style.backgroundSize='cover';
-              img.style.WebkitBackgroundSize='cover';
-              img.style.backgroundPosition='fixed';
-              img.style.backgroundClip='border-box';
-              img.style.WebkitBackgroundClip='border-box';
-              img.style.backgroundOrigin='border-box';
-              img.style.WebkitBackgroundOrigin='border-box';
-//              img.style.display='block';
-//              img.style.position='fixed';
-//              img.style.bottom=0;
-              img.style.opacity = 1;
-              img.style.filter = 'alpha(opacity=100)'
-            },300)
-            last_sec = current_sec;
-            
-            // Change blur
-            let blur_els = document.getElementsByClassName('blur');
-            for( let j = 0; j < blur_els.length; j += 1 ) {
-              blur_els[j].style.backgroundColor=rgbas[current_sec];
-            }
-          } 
-        }
-//            if ( st > wh || en < 0 ) {
-//              document.getElementById('background_img')
-//                      .style.opacity=0;
-//              document.getElementById('background_img')
-//                      .style.opacity=1;
-//            }
-      })())
     </script>
 	</body>
 </html>
