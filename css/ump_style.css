@@ -7,7 +7,7 @@ html {
 body {
     background-color: black;
     color: #FFFFDF;
-    font-family: Amiri-Regular, Gardamond, sans-serif;
+    font-family: Amiri-Regular;
     font-size: 11px;
     font-size: 1.1rem;
     margin: 0;
@@ -18,13 +18,14 @@ body {
 }
 ul {
     list-style-type: none;
-    margin: .2em 0;
+    margin: 1em 0;
     padding: 0;
     white-space: nowrap;
 }
 li {
-    margin: .2em 0;
-    padding: .2em 3em;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
     text-align: left;
 }
 span {
@@ -42,17 +43,17 @@ h1 {
 }
 h2 {
     font-family: Amiri-Regular;
-    font-size: 16px;
-    font-size: 1.6rem;
+    font-size: 11px;
+    font-size: 1.1rem;
     font-weight: bold;
-    margin: 1em 0 0 0;
+    margin: 0;
     text-decoration: none;
     text-transform: uppercase;
 }
 p {
     font-family: Amiri-Regular;
     letter-spacing: 1px;
-    line-height: 1.7em;
+    line-height: 1.5em;
 }
 a {
     color: #FFFFDF;
@@ -63,6 +64,9 @@ a {
 a:visited {
     color: #FFFFDF;
     text-decoration: none;
+}
+hr {
+    color: #FFFFDF;
 }
 .article {
     display: block;
@@ -79,7 +83,6 @@ a:visited {
     flex-shrink: 0;
     font-size: 1.4rem;
     line-height: 2;
-    margin-top: 0;
     padding: 8% 4%;
     word-spacing: 7px;
     z-index: 2;
@@ -140,6 +143,9 @@ a:visited {
     border-radius: 5px;
     width: 100%;
 }
+.no_lineheight {
+    line-height: 0 !important;
+}
 .no_top_margin {
     margin-top: 0 !important;
 }
@@ -168,8 +174,8 @@ a:visited {
         font-size: 2rem;
     }
     h2 {
-        font-size: 25.6px;
-        font-size: 1.6rem;
+        font-size: 18px;
+        font-size: 1.1rem;
     }
     .container {
         flex-wrap: nowrap;
@@ -179,8 +185,15 @@ a:visited {
     }
     .navigation {
         display: block;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         line-height: 1.5;
+        position: fixed;
+        right: 2%;
+        top: 2em;
+    }
+    .article {
+        flex-grow: 0;
+        flex-basis: 50%;
     }
 }
 @media only screen and (min-width: 1920px) {

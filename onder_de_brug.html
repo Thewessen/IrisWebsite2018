@@ -32,7 +32,7 @@
           </svg>
       </div>
       <div id='article' class='article'>
-        <h1 class='no_top_margin'>Onder de brug</h1>
+        <h1 style='margin-top: 60%; margin-top: 60vh;'>Onder de brug</h1>
           <p class='blur flavor'>
             Op verscholen plekken klinkt de stad heel anders. In de
             open lucht vervliegen de geluiden en de woorden. Onder de
@@ -53,20 +53,22 @@
             muziek die weerkaatst tussen het wateroppervlak van het IJ en
             het gestolde asfalt van de brug boven hun hoofden?
           </p>
-          <!-- <div class="youtube_container"> -->
-          <!--   <iframe style="width: 100%; height: 100%; position: absolute; top: 0; left: 0;" --> 
-          <!--           src="https://www.youtube.com/embed/KR_4NYh2tY8" -->
-          <!--   frameborder="0" allow="accelerometer; autoplay; -->
-          <!--   encrypted-media; gyroscope; picture-in-picture" -->
-          <!--   allowfullscreen></iframe> -->
-          <!-- </div> -->
+          <end />
+          <div class="youtube_container">
+            <iframe style="width: 100%; height: 100%; position: absolute; top: 0; left: 0;" 
+                    src="https://www.youtube.com/embed/KR_4NYh2tY8"
+            frameborder="0" allow="accelerometer; autoplay;
+            encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          </div>
           <p class='blur'>
             Meer weten? Lees
             <a href="https://overhetij.nl/nieuws/muzikale-ode-aan-de-galm">hier</a>
             het artikel van Over het IJ festival.
           </p>
-        <h1>Onder de brug: Torontobrug</h1>
+        <h1 style='margin-top: 60%; margin-top: 60vh;'>Onder de brug: Torontobrug</h1>
           <img class="img_full" src="./img/brug_trouw_large.jpg" />
+        <end />
       </div>
       <div id='nav' class='navigation'>
             <!-- Javascript gets inserted here (req. #id='nav'). -->
@@ -78,7 +80,31 @@
     <script>
       window.onload = function() {
         document.getElementById('background_img').style.display="block";
-      };
+      }
+      document.addEventListener('scroll', (function() {
+        let start = document.getElementsByTagName('h1');
+        let end = document.getElementsByTagName('end');
+        let wh = window.innerHeight;
+
+        return function() {
+          for( let i = 0; i < start.length && i < end.length; i += 1 ) {
+            let st = start[i].getBoundingClientRect().top;
+            let en = end[i].getBoundingClientRect().top;
+
+            if ( st < wh && en > 0 ) {
+              console.log('current section: ',i);
+              break;
+            }
+//            if ( st > wh || en < 0 ) {
+//              document.getElementById('background_img')
+//                      .style.opacity=0;
+//              document.getElementById('background_img')
+//                      .style.opacity=1;
+//            }
+          } 
+        };
+
+      })())
     </script>
 	</body>
 </html>
