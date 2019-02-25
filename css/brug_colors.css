@@ -5,15 +5,25 @@
 */
 .blur {
     background-color: rgba(77,64,47,0.5);
+    transition: background-color .3s ease .2s;
+    -webkit-transition: background-color .3s ease .2s;
+    -moz-transition: background-color .3s ease .2s;
+    -mz-transition: background-color .3s ease .2s;
 }
 .bg_img {
-    background-color: rgb(106,91,64);
-    background-image: url('../img/brug_medium.jpg');
+    background-color: rgb(77,64,47);
+    background-image: url('../img/brug_intro_large.jpg');
     background-position: center;
+    opacity: 1;
+    transition: opacity .3s ease .2s,
+                background-color .3s ease .2s;
+    -webkit-transition: opacity .3s ease .2s,
+                background-color .3s ease .2s;
+    -moz-transition: opacity .3s ease .2s,
+                background-color .3s ease .2s;
+    -mz-transition: opacity .3s ease .2s,
+                background-color .3s ease .2s;
 }
 
 @media only screen and (min-width: 768px) {
-.bg_img {
-    background-image: url('../img/brug_large.jpg');
-}
 }

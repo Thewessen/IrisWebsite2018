@@ -11,8 +11,8 @@
 }
 .agenda_images {
     display: flex;
-    flex-flow: column nowrap;
     flex: 0 1 40%;
+    flex-flow: column nowrap;
 }
 .agenda_content {
     flex: 1 0 60%;

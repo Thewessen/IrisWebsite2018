@@ -32,7 +32,7 @@
           </svg>
       </div>
       <div id='article' class='article'>
-        <h1 style='margin-top: 60%; margin-top: 60vh;'>Onder de brug</h1>
+        <h1 id='intro' style='margin-top: 60%; margin-top: 60vh;'>Onder de brug</h1>
           <p class='blur flavor'>
             Op verscholen plekken klinkt de stad heel anders. In de
             open lucht vervliegen de geluiden en de woorden. Onder de
@@ -47,6 +47,16 @@
             die met arpeggio's, akkoorden en melodie&euml;n. Zo bespeel ik
             mijn harp in de ruimte.
           </p> 
+          <end />
+          <p class='blur'>
+            Drie verschillende locaties, drie verschillende voorstellingen:
+          </p>
+          <ul>
+            <a href='#onder'><li>Over het IJ Festival</li></a>
+            <a href='#kelder'><li>Brugkelder</li></a>
+            <a href='#toronto'><li>Torontobrug</li></a>
+          </ul>
+        <h1 id='onder' style='margin-top: 60%; margin-top: 60vh;'>Onder de brug: Over het IJ</h1>
           <p class='blur'>
             De speellocatie van ONDER DE BRUG is een brug bij
             jachthaven Marina Amsterdam op de NDSM-werf. Hoe klinkt
@@ -66,8 +76,24 @@
             <a href="https://overhetij.nl/nieuws/muzikale-ode-aan-de-galm">hier</a>
             het artikel van Over het IJ festival.
           </p>
-        <h1 style='margin-top: 60%; margin-top: 60vh;'>Onder de brug: Torontobrug</h1>
+        <h1 id='kelder' style='margin-top: 60%; margin-top: 60vh;'>Brugkelder</h1>
+          <p class='blur'>
+            De speellocatie van ONDER DE BRUG is een brug bij
+            jachthaven Marina Amsterdam op de NDSM-werf. Hoe klinkt
+            muziek die weerkaatst tussen het wateroppervlak van het IJ en
+            het gestolde asfalt van de brug boven hun hoofden?
+          </p>
+        <end />
+        <h1 id='toronto' style='margin-top: 60%; margin-top: 60vh;'>Onder de brug: Torontobrug</h1>
+          <p class='blur'>
+            De speellocatie van ONDER DE BRUG is een brug bij
+            jachthaven Marina Amsterdam op de NDSM-werf. Hoe klinkt
+            muziek die weerkaatst tussen het wateroppervlak van het IJ en
+            het gestolde asfalt van de brug boven hun hoofden?
+          </p>
+        <end />
           <img class="img_full" src="./img/brug_trouw_large.jpg" />
+        <h1 id='toronto' style='margin-top: 60%; margin-top: 60vh;'>Met dank aan</h1>
         <end />
       </div>
       <div id='nav' class='navigation'>
@@ -83,27 +109,68 @@
       }
       document.addEventListener('scroll', (function() {
         let start = document.getElementsByTagName('h1');
-        let end = document.getElementsByTagName('end');
+//        let end = document.getElementsByTagName('end');
         let wh = window.innerHeight;
 
-        return function() {
-          for( let i = 0; i < start.length && i < end.length; i += 1 ) {
-            let st = start[i].getBoundingClientRect().top;
-            let en = end[i].getBoundingClientRect().top;
+        let bgs = [
+            "url('./img/brug_intro_large.jpg')",
+            "url('./img/brug_overhetij_large.jpg')",
+            "url('./img/brug_kelder.jpg')",
+            "url('./img/brug_toronto_large.jpg')",
+            "url('./img/brug_credits.jpg')"
+        ];
 
-            if ( st < wh && en > 0 ) {
-              console.log('current section: ',i);
-              break;
+        let rgbs = [
+            "rgb(77,74,73)",
+            "rgb(77,63,47)",
+            "rgb(104,128,167)",
+            "rgb(101,99,97)",
+            "rgb(143,139,136)"
+        ];
+
+        let rgbas = [
+            "rgba(77,74,73,0.5)",
+            "rgba(77,63,47,0.5)",
+            "rgba(104,128,167,0.5)",
+            "rgba(101,99,97,0.5)",
+            "rgba(143,139,136,0.5)"
+        ];
+
+        let last_sec = 0;
+        let current_sec = 0;
+
+        return function() {
+          for( let i = 0; i < start.length; i += 1 ) {
+            let st = start[i].getBoundingClientRect().top;
+
+            if ( st < wh ) {
+              current_sec = i;
             }
+          }
+          if ( current_sec !== last_sec ) {
+            // Change background image and color
+            let img = document.getElementById('background_img');
+            img.style.opacity = 0.2;
+            window.setTimeout(function() {
+              img.style.backgroundImage=bgs[current_sec];
+              img.style.backgroundColor=rgbs[current_sec];
+              img.style.opacity = 1;
+            },300)
+            last_sec = current_sec;
+            
+            // Change blur
+            let blur_els = document.getElementsByClassName('blur');
+            for( let j = 0; j < blur_els.length; j += 1 ) {
+              blur_els[j].style.backgroundColor=rgbas[current_sec];
+            }
+          } 
+        }
 //            if ( st > wh || en < 0 ) {
 //              document.getElementById('background_img')
 //                      .style.opacity=0;
 //              document.getElementById('background_img')
 //                      .style.opacity=1;
 //            }
-          } 
-        };
-
       })())
     </script>
 	</body>
