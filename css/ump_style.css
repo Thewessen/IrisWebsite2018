@@ -118,6 +118,7 @@ hr {
     -moz-background-size: cover;
     -ms-background-size: cover;
     -webkit-background-size: cover;
+    background-position: bottom;
     bottom: 0;
     height: 100%;
     position: fixed;
