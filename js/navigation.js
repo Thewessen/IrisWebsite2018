@@ -25,6 +25,9 @@
             link:   './castorpollux.html',
             content:'theater | Castor & Pollux',
         },{
+            link:   './danielle.html',
+            content:'theater | Danielle'
+        },{
             link:   './stem_van_de_molen.html',
             content:'De stem van de molen'
         },{

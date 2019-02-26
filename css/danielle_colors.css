@@ -1,22 +1,27 @@
-/* Average colors of bg_img [mean](med):
- * red: [101] (77)
- * green: [86] (64)
- * blue: [61.3] (47)
+/* Average colors in bg_img [mean](med):
+ * red: (147)
+ * green: (128)
+ * blue: (118)
+/* Average colors in bg_img [mean](med):
+ * red: (152)
+ * green: (116)
+ * blue: (81)
 */
 .blur {
-    background-color: rgba(77,74,73,0.5);
+    background-color: rgba(147,128,118,0.5);
     transition: background-color .3s ease .2s;
     -webkit-transition: background-color .3s ease .2s;
     -moz-transition: background-color .3s ease .2s;
     -mz-transition: background-color .3s ease .2s;
 }
 .bg_img {
-    bottom: 0;
+    /* bottom: 0; */
     /* right: 0; */
-    /* top: 0; */
+    top: 0;
     /* left: 0; */
-    background-color: rgb(77,74,73);
-    background-image: url('../img/brug_intro_large.jpg');
+    background-color: rgb(147,128,118);
+    background-image: url('../img/danielle_large.jpg');
+    background-position: right center;
     opacity: 1;
     filter: alpha(opacity=100);
     transition: opacity .3s ease .2s,
@@ -28,6 +33,7 @@
     -mz-transition: opacity .3s ease .2s,
                 filter .3s ease .2s;
 }
+
 @media screen and (orientation: portrait) {
   .extra_margin {
       margin-top: 60%;
@@ -42,7 +48,7 @@
   }
 }
 
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 768px) {
   .extra_margin {
       margin-top: 60%;
       margin-top: 60vh;

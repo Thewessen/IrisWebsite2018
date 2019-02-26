@@ -7,7 +7,7 @@ document.addEventListener('scroll', (function() {
             url: "url('./img/brug_intro_large.jpg')",
             rgb: "rgb(77,74,73)",
             rgba: "rgba(77,74,73,0.5)",
-            'bg-pos': "center bottom"
+            'bg-pos': "center center"
         },{
             url: "url('./img/brug_overhetij_large.jpg')",
             rgb: "rgb(77,63,47)",

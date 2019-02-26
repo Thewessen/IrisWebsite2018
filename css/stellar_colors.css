@@ -18,22 +18,22 @@
 
 @media screen and (orientation: portrait) {
   .article {
-      margin-top: 110vh;
-      margin-top: 110%;
+      margin-top: 70%;
+      margin-top: 70vh;
   }
 }
 
 @media screen and (orientation: landscape) {
   .article {
-      margin-top: 30vh;
-      margin-top: 30%;
+      margin-top: 40%;
+      margin-top: 40vh;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .article {
-      margin-top: 50vh;
-      margin-top: 50%;
+      margin-top: 70%;
+      margin-top: 70vh;
   }
   .bg_img {
       background-image: url('../img/stellar_large.jpg');

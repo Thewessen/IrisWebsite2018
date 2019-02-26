@@ -1,28 +1,33 @@
+body {
+    background-color: rgb(18,35,45);
+}
 .blur {
     background-color: rgba(18,35,45,0.5);
-}
-.bg_img {
-    /* bottom: 0; */
-    /* right: 0; */
-    /* top: 0; */
-    /* left: 0; */
-    background-color: rgb(18,35,45);
-    background-position: center bottom;
 }
 .agenda_item {
     display: flex;
     flex-flow: row nowrap;
 }
-.agenda_images {
-    display: flex;
-    flex: 0 0 40%;
-    flex-flow: column nowrap;
-}
-.agenda_content {
-    flex: 0 0 60%;
-    padding-left: 2%;
-}
 
+@media screen and (orientation: portrait) {
+    .agenda_content {
+        flex: 0 0 100%;
+    }
+    .agenda_images {
+        display: none;
+    }
+}
+@media screen and (orientation: landscape) {
+    .agenda_content {
+        flex: 0 0 60%;
+        padding-left: 2%;
+    }
+    .agenda_images {
+        display: flex;
+        flex: 0 0 40%;
+        flex-flow: column nowrap;
+    }
+}
 
 @media only screen and (min-width: 768px) {
 }
