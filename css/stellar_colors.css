@@ -1,0 +1,41 @@
+/* Average colors in bg_img [mean](med):
+ * red: (2)
+ * green: (14)
+ * blue: (67)
+*/
+.blur {
+    background-color: rgba(2,14,67,0.5);
+}
+.bg_img {
+    bottom: 0;
+    right: 0;
+    /* top: 0; */
+    /* left: 0; */
+    background-color: rgb(2,14,67);
+    background-image: url('../img/stellar_medium.jpg');
+    background-position: center;
+}
+
+@media screen and (orientation: portrait) {
+  .article {
+      margin-top: 110vh;
+      margin-top: 110%;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .article {
+      margin-top: 30vh;
+      margin-top: 30%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .article {
+      margin-top: 50vh;
+      margin-top: 50%;
+  }
+  .bg_img {
+      background-image: url('../img/stellar_large.jpg');
+  }
+}

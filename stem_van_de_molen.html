@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+          content="Project voor molen, harp en wind">
+    <meta name="author" content="Samuel Thewessen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>De stem van de molen</title>
+		<link rel="stylesheet" type="text/css" href="./css/ump_style.css">
+		<link rel="stylesheet" type="text/css" href="./css/molen_colors.css">
+	</head>
+	<body>
+    <div id='flex_container' class='container'>
+      <div id='icon_container' class='icon_container'> 
+          <svg id="menu_icon" class="blur menu_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" >
+              <rect id="svgEditorBackground" x="0" y="0" width="100%" height="100%" style="fill: none; stroke: none;"/>
+              <line id="line1" x1="6.25%" y1="25%" x2="93.25%" y2="25%" style="stroke:inherit;fill:none;stroke-width:10%;stroke-linecap:round;vector-effect:non-scaling-stroke;"/>
+              <line id="line2" x1="6.25%" y1="50%" x2="93.25%" y2="50%" style="stroke:inherit;fill:none;stroke-width:10%;stroke-linecap:round;vector-effect:non-scaling-stroke;"/>
+              <line id="line3" x1="6.25%" y1="75%" x2="93.25%" y2="75%" style="stroke:inherit;fill:none;stroke-width:10%;stroke-linecap:round;vector-effect:non-scaling-stroke;"/>
+          </svg>
+      </div>
+      <div id='article' class='article'>
+        <h1 id='intro' class='extra_margin'>De stem van de molen</h1>
+        <span class='flavor'>
+            Van Iris van der Ende i.s.m. Yvonne Frecmann
+        </span>
+        <img class='img_full' src='./img/molen_margraten.jpg' />
+        <p class='blur flavor'>
+          Een draaiende molen is een vertrouwd beeld in het Nederlandse
+          landschap. Maar hoe klinkt een molen eigenlijk? De wieken zoeven, het
+          mechanisme kraakt, piept en zucht op de stuwing van de wind. In de
+          performance van theatermaker/harpiste Iris van der Ende en componiste
+          Yvonne Freckmann krijgt de molen zelf een stem. Aangejaagd door de
+          wind, vervormd door de draaiende wieken en beantwoord door de harp.
+          Intussen doet de molenaar zijn werk: hij luistert naar de wind en
+          naar de molen. En wij luisteren mee.
+        </p>
+        <p class='blur flavor'>
+          Drie jaar geleden experimenteerde kunstenaar Iris van der Ende voor
+          het eerst met muziek bij de molen in de polders in Zuid-Holland.
+          Daarbij kreeg ze hulp van verschillende molenaars. Sinds de
+          samenwerking met Limburgs Landschap in najaar 2016 werkt componiste
+          Yvonne Freckmann mee aan de geluidsperformance.
+        </p> 
+        <p class='blur'>
+          In ‘De stem van de molen’ spelen een bewegende klankinstallatie,
+          harpmuziek, een vertelling en een draaiende molen de hoofdrol.
+          Terwijl Iris vertelt over de relatie die de molenaar heeft met zijn
+          molen, beantwoordt de harp de klank die van de molen komt. Doordat
+          klankbronnen zijn bevestigd aan de wieken, klinkt het geheel bij
+          iedere windsterkte anders. Soms fluistert de molen, soms zingt hij.
+          Centraal staat de wind die alles beroert en in verwarring brengt. Het
+          publiek zit buiten, aan de voet van de molen. Het kijkt naar de
+          ontketende wieken en hoort hoe de molen een stem krijgt.
+        </p>
+        <ul class='blur'>
+          <li>Idee, regie, compositie en harp: Iris van der Ende</li>
+          <li>Compositie en elektronica: Yvonne Freckmann</li> 
+          <li>Dramaturgie: Marijn van der Jagt</li>
+          <li>Project van stichting MCEM</li>
+          <li>Met dank aan: Clemens Maassen, Mattanja Coehoorn, molenaars Kees Barten, Hans Lippens, Pieter de Haan.</li>
+          <li>Ontwikkeld met ondersteuning van: Huis voor de Kunsten Limburg, Kunstsymposium</li>
+          <li>Oogsten, Prins Bernhard Cultuurfonds Limburg, Stichting MCEM, Kanunnik</li>
+          <li>Salden/Nieuwenhof, M.A.O.C. Gravin van Bylandt Stichting, Art Buro Limburg.</li>
+        </ul>
+        <ul class='blur'>
+          <li>Praktische informatie:</li>
+          <li>Locatie: Bergerweg 2, Nuth (Zuid-Limburg)</li>
+          <li>Molen: Beltkorenmolen</li>
+          <li>Eerste voorstelling: 12:00h-13:00h</li>
+          <li>Tweede voorstelling: 14:00h-15:00h</li>
+          <li>Duur: 40 minuten</li>
+          <li>Er is parkeergelegenheid</li>
+          <li>En het is bereikbaar met de bus</li>
+        </ul>
+        <div class="youtube_container">
+          <iframe style="width: 100%; height: 100%; position: absolute; top: 0; left: 0;" 
+                  src="https://www.youtube.com/embed/eS_kn29qs_A"
+          frameborder="0" allow="accelerometer; autoplay;
+          encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        </div>
+      </div>
+      <div id='nav' class='navigation'>
+            <!-- Javascript gets inserted here (req. #id='nav'). -->
+      </div>
+    </div>
+    <div id='background_img' class='bg_img'></div>
+    <script src='./js/navigation.js'></script>
+    <script src='./js/addEventListeners.js'></script>
+    <script src='./js/addBackgroundSwap.js'></script>
+    <script>
+      window.onload = function() {
+        document.getElementById('background_img').style.display="block";
+      };
+    </script>
+	</body>
+</html>

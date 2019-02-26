@@ -7,6 +7,10 @@
     background-color: rgba(54,54,55,0.5);
 }
 .bg_img {
+    bottom: 0;
+    /* right: 0; */
+    /* top: 0; */
+    /* left: 0; */
     background-color: rgb(54,54,55);
     background-image: url('../img/index_medium.jpg');
     background-position: center;

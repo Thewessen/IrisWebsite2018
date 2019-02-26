@@ -16,7 +16,7 @@
             link:   './waai.html',
             content:'theater | Waai'
         },{
-            link:   './stellarsounshow.html',
+            link:   './stellarsoundshow.html',
             content:'theater | Stellar Sound Show'
         },{
             link:   './verte.html',

@@ -20,7 +20,6 @@ ul {
     list-style-type: none;
     margin: 1em 0;
     padding: 0;
-    white-space: nowrap;
 }
 li {
     margin: 0;
@@ -29,7 +28,7 @@ li {
     text-align: left;
 }
 span {
-    padding: .1em .3em;
+    padding: 3px 5px;
 }
 h1 {
     font-family: Amiri-Regular;
@@ -45,7 +44,7 @@ h2 {
     font-family: Amiri-Regular;
     font-size: 11px;
     font-size: 1.1rem;
-    font-weight: bold;
+    font-weight: normal;
     margin: 0;
     text-decoration: none;
     text-transform: uppercase;
@@ -74,7 +73,7 @@ hr {
     flex-grow: 1;
     flex-shrink: 1;
     margin: 0;
-    padding: 7% 5%;
+    padding: 0 5%;
     z-index: 2;
 }
 .navigation {
@@ -84,8 +83,8 @@ hr {
     flex-shrink: 0;
     font-size: 1.4rem;
     line-height: 2;
-    padding: 8% 4%;
     word-spacing: 7px;
+    padding: 0 4%;
     z-index: 2;
 }
 .navigation a {
@@ -97,6 +96,7 @@ hr {
 }
 .navigation ul {
     margin-top: 1em;
+    white-space: nowrap;
 }
 .icon_container {
     flex-basis: 100%;
@@ -108,7 +108,7 @@ hr {
 .blur {
     background: transparent;
     border-radius: 5px;
-    padding: .1em .3em;
+    padding: 3px 5px;
 }
 .flavor {
     font-style: italic;
@@ -125,10 +125,6 @@ hr {
     -moz-background-size: cover;
     -ms-background-size: cover;
     -webkit-background-size: cover;
-    bottom: 0;
-    /* right: 0; */
-    /* top: 0; */
-    /* left: 0; */
     display: initial;
     height: 100%;
     position: fixed;
@@ -136,9 +132,19 @@ hr {
     z-index: 1;
 }
 .youtube_container {
+    display: block;
     background-color: transparent;
     border-radius: 5px;
     padding-top: 56.25%;
+    margin: 3px 5px;
+    position: relative;
+}
+.sound_container {
+    display: block;
+    background-color: transparent;
+    border-radius: 5px;
+    padding-top: 16.67%;
+    margin: 1rem 2rem;
     position: relative;
 }
 .container {
@@ -152,6 +158,7 @@ hr {
 .img_full {
     border-radius: 5px;
     width: 100%;
+    margin: 1em 0;
 }
 .no_lineheight {
     line-height: 0 !important;
@@ -170,7 +177,7 @@ hr {
     width: 3.2rem;
     z-index: 3;
 }
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
     /* For desktop/tablet: */
     html {
         font-size: 100%;
@@ -200,8 +207,10 @@ hr {
         position: fixed;
         right: 2%;
         top: 2em;
+        padding: 8% 4%;
     }
     .article {
+        padding: 7% 5%;
         flex-grow: 0;
         flex-basis: 50%;
     }
@@ -223,4 +232,12 @@ hr {
         font-size: 28.8px;
         font-size: 1.6rem;
     }
+}
+/* make nav and article fit together on ipad like screens */
+@media only screen and (orientation: portrait) and (min-width: 765px) and (max-width: 926px) {
+  .navigation {
+    font-size: 1em;
+    padding-right: 0;
+    right: 0;
+  }
 }

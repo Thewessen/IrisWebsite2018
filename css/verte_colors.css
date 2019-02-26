@@ -1,0 +1,44 @@
+.blur {
+    background-color: rgba(0,0,0,0.3);
+}
+.bg_img {
+    /* bottom: 0; */
+    right: 0;
+    top: 0;
+    /* left: 0; */
+    background-color: rgb(85,47,10);
+    background-image: url('../img/verte_medium.jpg');
+    background-position: left top;
+}
+
+@media screen and (orientation: portrait) {
+   .navigation {
+       margin-top: 80vh;
+       margin-top: 80%;
+   }
+  .article {
+      margin-top: 80vh;
+      margin-top: 80%;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .article {
+      margin-top: 30vh;
+      margin-top: 30%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+   .navigation {
+       margin-top: 30vh;
+       margin-top: 30%;
+   }
+  .article {
+      margin-top: 30vh;
+      margin-top: 30%;
+  }
+  .bg_img {
+      background-image: url('../img/verte_large.jpg');
+  }
+}
