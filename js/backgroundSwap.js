@@ -1,31 +1,16 @@
-document.addEventListener('scroll', (function() {
+function swapBackground( imgs ) {
+  document.addEventListener('scroll', (function() {
     let start = document.getElementsByTagName('h1');
     let wh = window.innerHeight;
 
-    let imgs = [
-        {
-            url: "url('./img/danielle_large.jpg')",
-            rgb: "rgb(147,128,118)",
-            rgba: "rgba(147,128,118,0.5)",
-            'bg-pos': "right center"
-        },{
-            url: "url('./img/filiaalmanager_large.jpg')",
-            rgb: "rgb(152,116,81)",
-            rgba: "rgba(152,116,81,0.5)",
-            'bg-pos': "center center"
-        },{
-            url: "url('./img/bbrood_large.jpg')",
-            rgb: "rgb(10,6,6)",
-            rgba: "rgba(10,6,6,0.5)",
-            'bg-pos': "center center"
-        }
-    ]
-        
+    let img = document.getElementById('background_img');
+
     let last_sec = 0;
     let current_sec = 0;
 
     return function() {
       for( let i = 0; i < start.length; i += 1 ) {
+        // Search for current section on page scroll
         let st = start[i].getBoundingClientRect().top;
 
         if ( st < wh ) {
@@ -33,8 +18,7 @@ document.addEventListener('scroll', (function() {
         }
       }
       if ( current_sec !== last_sec ) {
-        // Change background image and color
-        let img = document.getElementById('background_img');
+        // Change background image, color and position
         img.style.opacity = 0.2;
         img.style.filter = 'alpha(opacity=20)'
         window.setTimeout(function() {
@@ -53,4 +37,4 @@ document.addEventListener('scroll', (function() {
         }
       } 
     }
-})())
+})())}

@@ -92,10 +92,38 @@
     <div id='background_img' class='bg_img'></div>
     <script src='./js/navigation.js'></script>
     <script src='./js/addEventListeners.js'></script>
-    <script src='./js/addBackgroundSwapBrug.js'></script>
+    <script src='./js/backgroundSwap.js'></script>
     <script>
       window.onload = function() {
         document.getElementById('background_img').style.display="block";
+        swapBackground([
+          {
+              url: "url('./img/brug_intro_large.jpg')",
+              rgb: "rgb(77,74,73)",
+              rgba: "rgba(77,74,73,0.5)",
+              'bg-pos': "center center"
+          },{
+              url: "url('./img/brug_overhetij_large.jpg')",
+              rgb: "rgb(77,63,47)",
+              rgba: "rgba(77,63,47,0.5)",
+              'bg-pos': "center center"
+          },{
+              url: "url('./img/brug_kelder.jpg')",
+              rgb: "rgb(104,128,167)",
+              rgba: "rgba(104,128,167,0.5)",
+              'bg-pos': "right center"
+          },{
+              url: "url('./img/brug_toronto_large.jpg')",
+              rgb: "rgb(101,99,97)",
+              rgba: "rgba(101,99,97,0.5)",
+              'bg-pos': "right center"
+          },{
+              url: "url('./img/brug_credits.jpg')",
+              rgb: "rgb(143,139,136)",
+              rgba: "rgba(143,139,136,0.5)",
+              'bg-pos': "center bottom"
+          }
+        ])
       };
     </script>
 	</body>

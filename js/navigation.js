@@ -51,11 +51,18 @@
                 let content = document.createTextNode(indices[i].content);
                 let link = document.createElement('a');
                 let list = document.createElement('li');
-                let span = document.createElement('span');
+                let span;
+
+                if ( i === 0 ) {
+                    span = document.createElement('h7');
+                }
+                else {
+                    span = document.createElement('span');
+                    span.className='blur';
+                }
 
                 // set properties
                 link.href=indices[i].link;
-                span.className='blur';
 
                 // add event handlers
                 function mouseEnter() {
@@ -65,7 +72,7 @@
                 
                 function mouseLeave() {
                     span.style.borderBottom='none';
-                    span.className='blur';
+                    i !== 0 ? span.className='blur': span.classNamen=''; 
                 }
                 list.addEventListener('mouseenter',mouseEnter);
                 list.addEventListener('mouseleave',mouseLeave);

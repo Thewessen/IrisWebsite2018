@@ -32,7 +32,7 @@ span {
 h1 {
     font-family: Amiri-Regular;
     font-size: 20px;
-    font-size: 2rem;
+    font-size: 2em;
     font-stretch: extra-expanded;
     font-weight: normal;
     letter-spacing: 5px;
@@ -42,11 +42,20 @@ h1 {
 h2 {
     font-family: Amiri-Regular;
     font-size: 11px;
-    font-size: 1.1rem;
+    font-size: 1.1em;
     font-weight: normal;
     margin: 0;
     text-decoration: none;
     text-transform: uppercase;
+}
+h7 {
+    font-family: Amiri-Regular;
+    font-size: 11px;
+    font-size: 1.1em;
+    font-weight: normal;
+    letter-spacing: 3px;
+    margin: 0;
+    text-decoration: none;
 }
 p {
     font-family: Amiri-Regular;
@@ -75,17 +84,12 @@ hr {
     padding: 0 5%;
     z-index: 2;
 }
-.article ul {
-    line-height: 2em;
-}
 .navigation {
     display: none;
-    flex-basis: 0;
-    flex-grow: 0;
-    flex-shrink: 0;
+    position: fixed;
+    left: 4%;
     font-size: 1.4rem;
     line-height: 2em;
-    padding: 0 4%;
     word-spacing: 7px;
     z-index: 2;
 }
@@ -148,7 +152,7 @@ hr {
     background-color: transparent;
     border-radius: 5px;
     display: block;
-    margin: 1rem 2rem;
+    margin: 1em 2em;
     padding-top: 15%;
     position: relative;
     text-align: center;
@@ -176,13 +180,33 @@ hr {
 .menu_icon {
     cursor: pointer;
     height: 32px;
-    height: 3.2rem;
-    margin: 3rem;
+    height: 3.2em;
+    margin: 3em;
     padding: 0;
     stroke: #FFFFDF;
     width: 32px;
-    width: 3.2rem;
+    width: 3.2em;
     z-index: 3;
+}
+@media screen and (orientation: portrait) {
+    .sound_container {
+        padding-top: 15%;
+        width: 90%;
+    }
+    .navigation {
+        top: auto;
+        bottom: 5%;
+    }
+}
+@media screen and (orientation: landscape) {
+    .sound_container {
+        padding-top: 11%;
+        width: 65%;
+    }
+    .navigation {
+        top: 5%;
+        bottom: auto;
+    }
 }
 @media only screen and (min-width: 768px) {
     /* For desktop/tablet: */
@@ -195,20 +219,25 @@ hr {
     }
     h1 {
         font-size: 32px;
-        font-size: 2rem;
+        font-size: 2em;
     }
     h2 {
         font-size: 18px;
-        font-size: 1.1rem;
+        font-size: 1.1em;
+    }
+    h7 {
+        font-size: 18px;
+        font-size: 1.1em;
     }
     .navigation {
         display: block;
         font-size: 1.1rem;
         line-height: 2.2em;
         padding: 8% 4%;
-        position: fixed;
-        right: 2%;
-        top: 2em;
+        left: auto;
+        right: 2rem;
+        bottom: auto;
+        top: 2rem;
     }
     .article {
         flex-basis: 50%;
@@ -216,18 +245,11 @@ hr {
         line-height: 2em;
         padding: 7% 5%;
     }
-    .article ul {
-        line-height: 2em;
-    }
     .container {
         flex-wrap: nowrap;
     }
     .icon_container {
         display: none;
-    }
-    .sound_container {
-        padding-top: 10%;
-        width: 65%;
     }
 }
 @media only screen and (min-width: 1920px) {
@@ -241,17 +263,18 @@ hr {
     }
     h1 {
         font-size: 36px;
-        font-size: 2rem;
+        font-size: 2em;
     }
     h2 {
-        font-size: 28.8px;
-        font-size: 1.6rem;
+        font-size: 20px;
+        font-size: 1.1em;
+    }
+    h7 {
+        font-size: 20px;
+        font-size: 1.1em;
     }
     .article {
         line-height: 2.2em;
-    }
-    .article ul {
-        line-height: 2em;
     }
     .navigation {
         line-height: 2.5em;
