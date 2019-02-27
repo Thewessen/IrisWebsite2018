@@ -16,7 +16,13 @@ function swapBackground( imgs ) {
         if ( st < wh ) {
           current_sec = i;
         }
+
+        // Change shadow
+        if ( current_sec !== last_sec ) { start[i].style.textShadow='1px 1px ' + imgs[current_sec].rgb; }
       }
+      //Also change shadow of nav header
+      let special = document.getElementsByTagName('h7');
+      if ( special[0] ) { special[0].style.textShadow='1px 1px ' + imgs[current_sec].rgb; }
       if ( current_sec !== last_sec ) {
         // Change background image, color and position
         img.style.opacity = 0.2;

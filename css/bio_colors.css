@@ -15,25 +15,34 @@
     background-image: url('../img/contact_medium.jpg');
     background-position: center center;
 }
+.shadow {
+    text-shadow: 1px 1px rgb(63,63,63);
+}
+h1 {
+    text-shadow: 1px 1px rgb(63,63,63);
+}
+h7 {
+    text-shadow: 1px 1px rgb(63,63,63);
+}
 
 @media screen and (orientation: portrait) and (max-width: 769px) {
   .article {
-      margin-top: 60%;
-      margin-top: 60vh;
+      padding-top: 60%;
+      padding-top: 60vh;
   }
 }
 
 @media screen and (orientation: landscape) and (max-width: 769px) {
   .article {
-      margin-top: 30%;
-      margin-top: 30vh;
+      padding-top: 30%;
+      padding-top: 30vh;
   }
 }
 
 @media only screen and (min-width: 770px) {
   .article {
-      margin-top: 30%;
-      margin-top: 30vh;
+      padding-top: 60%;
+      padding-top: 60vh;
   }
   .bg_img {
       background-image: url('../img/contact_large.jpg');

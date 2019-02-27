@@ -4,13 +4,22 @@
     let nav = document.getElementById('nav');
 
     if ( icon && art && nav ) {
-        icon.addEventListener('click',function() {
-            getComputedStyle(art,null).display === 'block' ?
-                art.style.display = 'none' :
-                art.style.display = 'block';
-            getComputedStyle(nav,null).display === 'block' ?
-                nav.style.display = 'none' :
-                nav.style.display = 'block';
-        })
+      
+      function show_hide_menu() {
+              getComputedStyle(art,null).display === 'block' ?
+                  art.style.display = 'none' :
+                  art.style.display = 'block';
+              getComputedStyle(nav,null).display === 'block' ?
+                  nav.style.display = 'none' :
+                  nav.style.display = 'block';
+      }
+
+      // Add bigger click area for small screens
+      if( window.innerWidth < 768 ) {
+          nav.parentElement.addEventListener('click',show_hide_menu)
+      } 
+      else {
+          icon.addEventListener('click',show_hide_menu) 
+      }
     }
 })()

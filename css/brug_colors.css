@@ -28,23 +28,32 @@
     -mz-transition: opacity .3s ease .2s,
                 filter .3s ease .2s;
 }
+.shadow {
+    text-shadow: 1px 1px rgb(77,74,73);
+}
+h1 {
+    text-shadow: 1px 1px rgb(77,74,73);
+}
+h7 {
+    text-shadow: 1px 1px rgb(77,74,73);
+}
 @media screen and (orientation: portrait) {
-  .extra_margin {
-      margin-top: 60%;
-      margin-top: 60vh;
+  .extra_padding {
+      padding-top: 60%;
+      padding-top: 60vh;
   }
 }
 
 @media screen and (orientation: landscape) {
-  .extra_margin {
-      margin-top: 30%;
-      margin-top: 30vh;
+  .extra_padding {
+      padding-top: 30%;
+      padding-top: 30vh;
   }
 }
 
 @media only screen and (min-width: 770px) {
-  .extra_margin {
-      margin-top: 60%;
-      margin-top: 60vh;
+  .extra_padding {
+      padding-top: 60%;
+      padding-top: 60vh;
   }
 }

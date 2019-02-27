@@ -15,29 +15,57 @@
     background-image: url('../img/molen_large.jpg');
     background-position: center;
 }
+.shadow {
+    text-shadow: 1px 1px rgb(85,47,10);
+}
+.split_item {
+    display: flex;
+    flex-flow: row nowrap;
+}
+h1 {
+    text-shadow: 1px 1px rgb(85,47,10);
+}
+h7 {
+    text-shadow: 1px 1px rgb(85,47,10);
+}
 
 @media screen and (orientation: portrait) {
+   .split_content {
+       flex: 0 0 100%;
+   }
+   .split_images {
+       display: none;
+   }
    .navigation {
-       margin-top: 30%;
-       margin-top: 30vh;
+       padding-top: 30%;
+       padding-top: 30vh;
    }
   .article {
-      margin-top: 60%;
-      margin-top: 60vh;
+      padding-top: 60%;
+      padding-top: 60vh;
   }
 }
 
 @media screen and (orientation: landscape) {
+  .split_content {
+      flex: 0 0 60%;
+      padding-left: 2%;
+  }
+  .split_images {
+      display: flex;
+      flex: 0 0 40%;
+      flex-flow: column nowrap;
+  }
   .article {
-      margin-top: 30%;
-      margin-top: 30vh;
+      padding-top: 30%;
+      padding-top: 30vh;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .article {
-      margin-top: 30%;
-      margin-top: 30vh;
+      padding-top: 30%;
+      padding-top: 30vh;
   }
   .bg_img {
       background-image: url('../img/molen_large.jpg');

@@ -15,6 +15,15 @@
     background-image: url('../img/index_medium.jpg');
     background-position: center;
 }
+.shadow {
+    text-shadow: 1px 1px rgb(54,54,55);
+}
+h1 {
+    text-shadow: 1px 1px rgb(54,54,55);
+}
+h7 {
+    text-shadow: 1px 1px rgb(54,54,55);
+}
 
 @media only screen and (min-width: 768px) {
     .bg_img {

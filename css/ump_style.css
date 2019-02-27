@@ -17,6 +17,7 @@ body {
     -webkit-user-select: none;
 }
 ul {
+    display: inline-block;
     list-style-type: none;
     margin: 1em 0;
     padding: 0;
@@ -58,6 +59,7 @@ h7 {
     text-decoration: none;
 }
 p {
+    display: inline-block;
     font-family: Amiri-Regular;
 }
 a {
@@ -88,6 +90,7 @@ hr {
     display: none;
     position: fixed;
     left: 4%;
+    top: 5%;
     font-size: 1.4rem;
     line-height: 2em;
     word-spacing: 7px;
@@ -162,7 +165,9 @@ hr {
     align-items: flex-start;
     display: flex;
     flex-flow: row wrap;
+    position: absolute;
     height: 100%;
+    align-contant: flex-start;
     justify-content: flex-start;
     width: 100%;
 }
@@ -193,19 +198,11 @@ hr {
         padding-top: 15%;
         width: 90%;
     }
-    .navigation {
-        top: auto;
-        bottom: 5%;
-    }
 }
 @media screen and (orientation: landscape) {
     .sound_container {
         padding-top: 11%;
         width: 65%;
-    }
-    .navigation {
-        top: 5%;
-        bottom: auto;
     }
 }
 @media only screen and (min-width: 768px) {

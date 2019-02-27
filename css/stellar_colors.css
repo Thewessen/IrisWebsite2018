@@ -15,25 +15,34 @@
     background-image: url('../img/stellar_medium.jpg');
     background-position: center;
 }
+.shadow {
+    text-shadow: 1px 1px rgb(2,14,67);
+}
+h1 {
+    text-shadow: 1px 1px rgb(2,14,67);
+}
+h7 {
+    text-shadow: 1px 1px rgb(2,14,67);
+}
 
 @media screen and (orientation: portrait) {
   .article {
-      margin-top: 70%;
-      margin-top: 70vh;
+      padding-top: 70%;
+      padding-top: 70vh;
   }
 }
 
 @media screen and (orientation: landscape) {
   .article {
-      margin-top: 40%;
-      margin-top: 40vh;
+      padding-top: 40%;
+      padding-top: 40vh;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .article {
-      margin-top: 70%;
-      margin-top: 70vh;
+      padding-top: 70%;
+      padding-top: 70vh;
   }
   .bg_img {
       background-image: url('../img/stellar_large.jpg');
