@@ -1,8 +1,6 @@
 function swapBackground( imgs ) {
   document.addEventListener('scroll', (function() {
     let start = document.getElementsByTagName('h1');
-    let wh = window.innerHeight;
-
     let img = document.getElementById('background_img');
 
     let last_sec = 0;
@@ -11,6 +9,7 @@ function swapBackground( imgs ) {
     return function() {
       for( let i = 0; i < start.length; i += 1 ) {
         // Search for current section on page scroll
+        let wh = window.innerHeight;
         let st = start[i].getBoundingClientRect().bottom;
 
         if ( st < wh ) {
