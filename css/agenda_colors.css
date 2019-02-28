@@ -1,6 +1,9 @@
 body {
     background-color: rgb(18,35,45);
 }
+hr {
+    width: 90%;
+}
 .blur {
     background-color: rgba(18,35,45,0.5);
 }
@@ -14,6 +17,11 @@ body {
 
 @media screen and (orientation: portrait) {
     .agenda_content {
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: flex-start;
+        align-items: flex-start;
+        justify-content: flex-start;
         flex: 0 0 100%;
     }
     .agenda_images {

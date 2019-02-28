@@ -6,12 +6,12 @@
     if ( icon && art && nav ) {
       
       function show_hide_menu() {
-              getComputedStyle(art,null).display === 'block' ?
+              getComputedStyle(art,null).display === 'flex' ?
                   art.style.display = 'none' :
-                  art.style.display = 'block';
-              getComputedStyle(nav,null).display === 'block' ?
+                  art.style.display = 'flex';
+              getComputedStyle(nav,null).display === 'flex' ?
                   nav.style.display = 'none' :
-                  nav.style.display = 'block';
+                  nav.style.display = 'flex';
       }
 
       // Add bigger click area for small screens
