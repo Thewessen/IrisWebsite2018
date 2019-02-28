@@ -14,12 +14,6 @@
                   nav.style.display = 'flex';
       }
 
-      // Add bigger click area for small screens
-      if( window.innerWidth < 768 ) {
-          nav.parentElement.addEventListener('click',show_hide_menu)
-      } 
-      else {
-          icon.addEventListener('click',show_hide_menu) 
-      }
+      icon.addEventListener('click',show_hide_menu) 
     }
 })()

@@ -75,7 +75,7 @@
         
         function mouseLeave() {
             span.style.borderBottom='none';
-            i !== 0 ? span.className='blur': span.classNamen=''; 
+            i !== 0 ? span.className='blur' : span.className=''; 
         }
 
         if ( i !== 0 ) {

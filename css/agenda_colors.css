@@ -14,14 +14,20 @@ hr {
     display: flex;
     flex-flow: row nowrap;
 }
+.agenda_content {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.agenda_images {
+    display: flex;
+    flex-flow: column nowrap;
+}
 
 @media screen and (orientation: portrait) {
     .agenda_content {
-        display: flex;
-        flex-flow: column nowrap;
-        align-content: flex-start;
-        align-items: flex-start;
-        justify-content: flex-start;
         flex: 0 0 100%;
     }
     .agenda_images {
@@ -34,9 +40,7 @@ hr {
         padding-left: 2%;
     }
     .agenda_images {
-        display: flex;
         flex: 0 0 40%;
-        flex-flow: column nowrap;
     }
 }
 
