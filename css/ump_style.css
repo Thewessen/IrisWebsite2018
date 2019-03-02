@@ -1,6 +1,10 @@
-/* * { */
-/*     box-sizing: border-box; */
-/* } */
+@font-face {
+    font-family: IrisFont;
+    src: url("/DomainTextWeb-Regular.woff2") format('woff2');
+}
+* {
+    box-sizing: border-box;
+}
 html {
     font-size: 62.5%;
     padding-bottom: 30%;
@@ -8,14 +12,16 @@ html {
 body {
     background-color: black;
     color: #FFFFDF;
-    font-family: Amiri-Regular;
+    font-family: orpheuspro, serif;
+    /* font-family: IrisFont; */
+    /* font-family: Amiri-Regular; */
     font-size: 11px;
     font-size: 1.1rem;
     margin: 0;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-user-select: none;
+    /* -moz-user-select: none; */
+    /* -ms-user-select: none; */
+    /* user-select: none; */
+    /* -webkit-user-select: none; */
 }
 ul {
     display: inline-block;
@@ -32,7 +38,9 @@ span {
     padding: 3px 5px;
 }
 h1 {
-    font-family: Amiri-Regular;
+    font-family: orpheuspro, serif;
+    /* font-family: IrisFont; */
+    /* font-family: Amiri-Regular; */
     font-size: 20px;
     font-size: 2em;
     font-stretch: extra-expanded;
@@ -42,7 +50,9 @@ h1 {
     text-decoration: none;
 }
 h2 {
-    font-family: Amiri-Regular;
+    font-family: orpheuspro, serif;
+    /* font-family: IrisFont; */
+    /* font-family: Amiri-Regular; */
     font-size: 11px;
     font-size: 1.1em;
     font-weight: normal;
@@ -51,7 +61,9 @@ h2 {
     text-transform: uppercase;
 }
 h7 {
-    font-family: Amiri-Regular;
+    font-family: orpheuspro, serif;
+    /* font-family: IrisFont; */
+    /* font-family: Amiri-Regular; */
     font-size: 11px;
     font-size: 1.1em;
     font-weight: normal;
@@ -61,11 +73,15 @@ h7 {
 }
 p {
     display: inline-block;
-    font-family: Amiri-Regular;
+    font-family: orpheuspro, serif;
+    /* font-family: IrisFont; */
+    /* font-family: Amiri-Regular; */
 }
 a {
     color: #FFFFDF;
-    font-family: Amiri-Regular;
+    font-family: orpheuspro, serif;
+    /* font-family: IrisFont; */
+    /* font-family: Amiri-Regular; */
     letter-spacing: 1px;
     text-decoration: underline;
 }

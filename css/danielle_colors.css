@@ -58,9 +58,6 @@ h7 {
 }
 
 @media only screen and (min-width: 768px) {
-  .navigation {
-    padding: 0 4%;
-  }
   .extra_padding {
       padding-top: 60%;
       padding-top: 60vh;

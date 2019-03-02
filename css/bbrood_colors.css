@@ -41,7 +41,8 @@ h7 {
 
 @media only screen and (min-width: 768px) {
   .article {
-      padding-top: 0;
+      padding-top: 60%;
+      padding-top: 60vh;
   }
   .bg_img {
       background-image: url('../img/bbrood_large.jpg');

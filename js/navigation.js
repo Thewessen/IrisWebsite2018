@@ -4,6 +4,9 @@
         link:   './index.html',
         content:'Iris van der Ende'
     },{
+        link:   './nieuw.html',
+        content:'NIEUW!!'
+    },{
         link:   './onder_de_brug.html',
         content:'project | Onder de brug'
     },{

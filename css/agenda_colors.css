@@ -40,7 +40,7 @@ hr {
         padding-left: 2%;
     }
     .agenda_images {
-        flex: 0 0 40%;
+        flex: 1 1 40%;
     }
 }
 
