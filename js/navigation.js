@@ -7,35 +7,11 @@
         link:   './onder_de_brug.html',
         content:'project | Onder de brug'
     },{
-        link:   './stem_van_de_molen.html',
-        content:'project | De stem van de molen'
-    },{
         link:   './stellarsoundshow.html',
         content:'project | Stellar Sound Show'
     },{
-        link:   './castorpollux.html',
-        content:'theater | Castor & Pollux',
-    },{
-        link:   './verte.html',
-        content:'theater | Verte'
-    },{
-        link:   './waai.html',
-        content:'theater | Waai'
-    },{
-        link:   './danielle.html',
-        content:'theater | Daniëlle & filiaalmanager'
-    },{
-        link:   './begrafenisdienst.html',
-        content:'harpiste voor begrafenisdienst'
-    },{
-        link:   './bbrood.html',
-        content:'gedachtes van BBrood'
-    },{
         link:   './agenda.html',
         content:'agenda'
-    },{
-        link:   './bio_contact.html',
-        content:'biografie + contact'
     }
   ];
 
