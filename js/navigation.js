@@ -13,6 +13,9 @@
         link:   './stellarsoundshow.html',
         content:'project | Stellar Sound Show'
     },{
+        link:   './whoiam.html',
+        content:'theater | Do you know who I am?',
+    },{
         link:   './castorpollux.html',
         content:'theater | Castor & Pollux',
     },{

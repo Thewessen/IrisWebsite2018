@@ -1,0 +1,50 @@
+/* Average colors in bg_img [mean](med):
+ * red: (67)
+ * green: (54)
+ * blue: (80)
+ */
+.blur {
+    background-color: rgba(67,54,80,0.5);
+}
+.bg_img {
+    bottom: 0;
+    /* right: 0; */
+    /* top: 0; */
+    /* left: 0; */
+    background-color: rgb(67,54,80);
+    background-image: url('../img/whoiam_medium.jpg');
+    background-position: center center;
+}
+.shadow {
+    text-shadow: 1px 1px rgb(67,54,80);
+}
+h1 {
+    text-shadow: 1px 1px rgb(67,54,80);
+}
+h7 {
+    text-shadow: 1px 1px rgb(67,54,80);
+}
+
+@media screen and (orientation: portrait) {
+  .article {
+      padding-top: 60%;
+      padding-top: 60vh;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .article {
+      padding-top: 30%;
+      padding-top: 30vh;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .article {
+      padding-top: 60%;
+      padding-top: 60vh;
+  }
+  .bg_img {
+      background-image: url('../img/whoiam_large.jpg');
+  }
+}
